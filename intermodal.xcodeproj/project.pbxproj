@@ -1,0 +1,301 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		038836E41C854825005C5984 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 038836E31C854825005C5984 /* AppDelegate.m */; };
+		038836E71C854825005C5984 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 038836E61C854825005C5984 /* main.m */; };
+		038836E91C854825005C5984 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 038836E81C854825005C5984 /* Assets.xcassets */; };
+		038836EC1C854825005C5984 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 038836EA1C854825005C5984 /* MainMenu.xib */; };
+		31DE568A39603A72E7C93940 /* IMStatusItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DE5B5939E0D0BECE99A438 /* IMStatusItem.m */; };
+		31DE59415CD361F7E335EA80 /* IMStatusBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DE53AC773A66B5983E6E5B /* IMStatusBarController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		038836DF1C854825005C5984 /* intermodal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = intermodal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		038836E21C854825005C5984 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		038836E31C854825005C5984 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		038836E61C854825005C5984 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		038836E81C854825005C5984 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		038836EB1C854825005C5984 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		038836ED1C854825005C5984 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31DE53AC773A66B5983E6E5B /* IMStatusBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMStatusBarController.m; sourceTree = "<group>"; };
+		31DE54FD483755416C822475 /* IMStatusBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMStatusBarController.h; sourceTree = "<group>"; };
+		31DE59475BCA378F53541492 /* IMStatusItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMStatusItem.h; sourceTree = "<group>"; };
+		31DE5B5939E0D0BECE99A438 /* IMStatusItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMStatusItem.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		038836DC1C854825005C5984 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		038836D61C854825005C5984 = {
+			isa = PBXGroup;
+			children = (
+				038836E11C854825005C5984 /* intermodal */,
+				038836E01C854825005C5984 /* Products */,
+				31DE5B5939E0D0BECE99A438 /* IMStatusItem.m */,
+				31DE59475BCA378F53541492 /* IMStatusItem.h */,
+			);
+			sourceTree = "<group>";
+		};
+		038836E01C854825005C5984 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				038836DF1C854825005C5984 /* intermodal.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		038836E11C854825005C5984 /* intermodal */ = {
+			isa = PBXGroup;
+			children = (
+				038836E21C854825005C5984 /* AppDelegate.h */,
+				038836E31C854825005C5984 /* AppDelegate.m */,
+				038836E81C854825005C5984 /* Assets.xcassets */,
+				038836EA1C854825005C5984 /* MainMenu.xib */,
+				038836ED1C854825005C5984 /* Info.plist */,
+				038836E51C854825005C5984 /* Supporting Files */,
+				31DE53AC773A66B5983E6E5B /* IMStatusBarController.m */,
+				31DE54FD483755416C822475 /* IMStatusBarController.h */,
+			);
+			path = intermodal;
+			sourceTree = "<group>";
+		};
+		038836E51C854825005C5984 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				038836E61C854825005C5984 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		038836DE1C854825005C5984 /* intermodal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 038836F01C854825005C5984 /* Build configuration list for PBXNativeTarget "intermodal" */;
+			buildPhases = (
+				038836DB1C854825005C5984 /* Sources */,
+				038836DC1C854825005C5984 /* Frameworks */,
+				038836DD1C854825005C5984 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = intermodal;
+			productName = intermodal;
+			productReference = 038836DF1C854825005C5984 /* intermodal.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		038836D71C854825005C5984 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = joshbutts;
+				TargetAttributes = {
+					038836DE1C854825005C5984 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 038836DA1C854825005C5984 /* Build configuration list for PBXProject "intermodal" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 038836D61C854825005C5984;
+			productRefGroup = 038836E01C854825005C5984 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				038836DE1C854825005C5984 /* intermodal */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		038836DD1C854825005C5984 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				038836E91C854825005C5984 /* Assets.xcassets in Resources */,
+				038836EC1C854825005C5984 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		038836DB1C854825005C5984 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				038836E71C854825005C5984 /* main.m in Sources */,
+				038836E41C854825005C5984 /* AppDelegate.m in Sources */,
+				31DE568A39603A72E7C93940 /* IMStatusItem.m in Sources */,
+				31DE59415CD361F7E335EA80 /* IMStatusBarController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		038836EA1C854825005C5984 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				038836EB1C854825005C5984 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		038836EE1C854825005C5984 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		038836EF1C854825005C5984 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		038836F11C854825005C5984 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = intermodal/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.joshbutts.intermodal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		038836F21C854825005C5984 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = intermodal/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.joshbutts.intermodal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		038836DA1C854825005C5984 /* Build configuration list for PBXProject "intermodal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				038836EE1C854825005C5984 /* Debug */,
+				038836EF1C854825005C5984 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		038836F01C854825005C5984 /* Build configuration list for PBXNativeTarget "intermodal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				038836F11C854825005C5984 /* Debug */,
+				038836F21C854825005C5984 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 038836D71C854825005C5984 /* Project object */;
+}
