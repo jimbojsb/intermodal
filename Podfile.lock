@@ -1,0 +1,10 @@
+PODS:
+  - SOAPEngine (1.26)
+
+DEPENDENCIES:
+  - SOAPEngine (~> 1.26)
+
+SPEC CHECKSUMS:
+  SOAPEngine: d2a2d8b49e8da92ec215d4baaa98b03be4d6ae89
+
+COCOAPODS: 0.39.0

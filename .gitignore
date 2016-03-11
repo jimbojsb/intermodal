@@ -23,4 +23,5 @@ xcuserdata
 *.moved-aside
 *.xcuserstate
 
+Pods/
 # Created by .ignore support plugin (hsz.mobi)

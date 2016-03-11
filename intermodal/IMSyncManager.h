@@ -4,8 +4,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <AppKit/NSStatusItem.h>
 
 
-@interface IMStatusItem : NSStatusItem
+@interface IMSyncManager : NSObject
 @end

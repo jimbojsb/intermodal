@@ -3,10 +3,10 @@
 // Copyright (c) 2016 joshbutts. All rights reserved.
 //
 
-#import "IMStatusItem.h"
+#import "IMSyncManager.h"
 
 
-@implementation IMStatusItem {
+@implementation IMSyncManager {
 
 }
 @end

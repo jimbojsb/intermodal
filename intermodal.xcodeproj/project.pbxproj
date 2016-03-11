@@ -11,8 +11,11 @@
 		038836E71C854825005C5984 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 038836E61C854825005C5984 /* main.m */; };
 		038836E91C854825005C5984 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 038836E81C854825005C5984 /* Assets.xcassets */; };
 		038836EC1C854825005C5984 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 038836EA1C854825005C5984 /* MainMenu.xib */; };
-		31DE568A39603A72E7C93940 /* IMStatusItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DE5B5939E0D0BECE99A438 /* IMStatusItem.m */; };
+		31DE547BA7826B3522A0F58D /* IMVirtualBoxClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DE5DD58489165BC6F6D155 /* IMVirtualBoxClient.m */; };
+		31DE5681890A4A7F7CA4F8F2 /* IMSyncManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DE5C53C6594C535BB6FAC7 /* IMSyncManager.m */; };
 		31DE59415CD361F7E335EA80 /* IMStatusBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DE53AC773A66B5983E6E5B /* IMStatusBarController.m */; };
+		31DE5CBD67FD4CF1C435E44F /* IMProcessManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DE57FDFEEF5525B43ED95C /* IMProcessManager.m */; };
+		B1619E4E09DC759FE6EA950F /* libPods-intermodal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB10AE686A03CDE02662AE83 /* libPods-intermodal.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,10 +26,17 @@
 		038836E81C854825005C5984 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		038836EB1C854825005C5984 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		038836ED1C854825005C5984 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31DE51D149FF8B3B81F30CEE /* IMVirtualBoxClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMVirtualBoxClient.h; sourceTree = "<group>"; };
 		31DE53AC773A66B5983E6E5B /* IMStatusBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMStatusBarController.m; sourceTree = "<group>"; };
 		31DE54FD483755416C822475 /* IMStatusBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMStatusBarController.h; sourceTree = "<group>"; };
-		31DE59475BCA378F53541492 /* IMStatusItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMStatusItem.h; sourceTree = "<group>"; };
-		31DE5B5939E0D0BECE99A438 /* IMStatusItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMStatusItem.m; sourceTree = "<group>"; };
+		31DE55C3A7C425AC16E7CED8 /* IMSyncManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMSyncManager.h; sourceTree = "<group>"; };
+		31DE56D1CE994212D07044EA /* IMProcessManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMProcessManager.h; sourceTree = "<group>"; };
+		31DE57FDFEEF5525B43ED95C /* IMProcessManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMProcessManager.m; sourceTree = "<group>"; };
+		31DE5C53C6594C535BB6FAC7 /* IMSyncManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMSyncManager.m; sourceTree = "<group>"; };
+		31DE5DD58489165BC6F6D155 /* IMVirtualBoxClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMVirtualBoxClient.m; sourceTree = "<group>"; };
+		5ED404EE84A03A193144590E /* Pods-intermodal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-intermodal.release.xcconfig"; path = "Pods/Target Support Files/Pods-intermodal/Pods-intermodal.release.xcconfig"; sourceTree = "<group>"; };
+		AB10AE686A03CDE02662AE83 /* libPods-intermodal.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-intermodal.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDD230924B90BDD4F18DC4F8 /* Pods-intermodal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-intermodal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-intermodal/Pods-intermodal.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1619E4E09DC759FE6EA950F /* libPods-intermodal.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,8 +56,8 @@
 			children = (
 				038836E11C854825005C5984 /* intermodal */,
 				038836E01C854825005C5984 /* Products */,
-				31DE5B5939E0D0BECE99A438 /* IMStatusItem.m */,
-				31DE59475BCA378F53541492 /* IMStatusItem.h */,
+				4DE1FCB9156709126CFA882A /* Pods */,
+				D1730E5699B2E6F4389FC3D6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,6 +80,12 @@
 				038836E51C854825005C5984 /* Supporting Files */,
 				31DE53AC773A66B5983E6E5B /* IMStatusBarController.m */,
 				31DE54FD483755416C822475 /* IMStatusBarController.h */,
+				31DE5DD58489165BC6F6D155 /* IMVirtualBoxClient.m */,
+				31DE51D149FF8B3B81F30CEE /* IMVirtualBoxClient.h */,
+				31DE5C53C6594C535BB6FAC7 /* IMSyncManager.m */,
+				31DE55C3A7C425AC16E7CED8 /* IMSyncManager.h */,
+				31DE57FDFEEF5525B43ED95C /* IMProcessManager.m */,
+				31DE56D1CE994212D07044EA /* IMProcessManager.h */,
 			);
 			path = intermodal;
 			sourceTree = "<group>";
@@ -81,6 +98,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		4DE1FCB9156709126CFA882A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EDD230924B90BDD4F18DC4F8 /* Pods-intermodal.debug.xcconfig */,
+				5ED404EE84A03A193144590E /* Pods-intermodal.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D1730E5699B2E6F4389FC3D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB10AE686A03CDE02662AE83 /* libPods-intermodal.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -88,9 +122,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 038836F01C854825005C5984 /* Build configuration list for PBXNativeTarget "intermodal" */;
 			buildPhases = (
+				D734B46248A147F039E1986F /* Check Pods Manifest.lock */,
 				038836DB1C854825005C5984 /* Sources */,
 				038836DC1C854825005C5984 /* Frameworks */,
 				038836DD1C854825005C5984 /* Resources */,
+				AAC5899E88B4737A52F65116 /* Embed Pods Frameworks */,
+				825B4B339B3BF3DD6FC29DF5 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -145,6 +182,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		825B4B339B3BF3DD6FC29DF5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-intermodal/Pods-intermodal-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AAC5899E88B4737A52F65116 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-intermodal/Pods-intermodal-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D734B46248A147F039E1986F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		038836DB1C854825005C5984 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -152,8 +237,10 @@
 			files = (
 				038836E71C854825005C5984 /* main.m in Sources */,
 				038836E41C854825005C5984 /* AppDelegate.m in Sources */,
-				31DE568A39603A72E7C93940 /* IMStatusItem.m in Sources */,
 				31DE59415CD361F7E335EA80 /* IMStatusBarController.m in Sources */,
+				31DE547BA7826B3522A0F58D /* IMVirtualBoxClient.m in Sources */,
+				31DE5681890A4A7F7CA4F8F2 /* IMSyncManager.m in Sources */,
+				31DE5CBD67FD4CF1C435E44F /* IMProcessManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +339,7 @@
 		};
 		038836F11C854825005C5984 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDD230924B90BDD4F18DC4F8 /* Pods-intermodal.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -264,6 +352,7 @@
 		};
 		038836F21C854825005C5984 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5ED404EE84A03A193144590E /* Pods-intermodal.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
