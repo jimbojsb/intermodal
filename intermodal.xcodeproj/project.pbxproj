@@ -11,10 +11,13 @@
 		038836E71C854825005C5984 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 038836E61C854825005C5984 /* main.m */; };
 		038836E91C854825005C5984 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 038836E81C854825005C5984 /* Assets.xcassets */; };
 		038836EC1C854825005C5984 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 038836EA1C854825005C5984 /* MainMenu.xib */; };
+		31DE501CC4CDFBCE58ABA986 /* IMRsyncDaemon.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DE596164924F034E4BC394 /* IMRsyncDaemon.m */; };
 		31DE547BA7826B3522A0F58D /* IMVirtualBoxClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DE5DD58489165BC6F6D155 /* IMVirtualBoxClient.m */; };
 		31DE5681890A4A7F7CA4F8F2 /* IMSyncManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DE5C53C6594C535BB6FAC7 /* IMSyncManager.m */; };
 		31DE59415CD361F7E335EA80 /* IMStatusBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DE53AC773A66B5983E6E5B /* IMStatusBarController.m */; };
 		31DE5CBD67FD4CF1C435E44F /* IMProcessManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DE57FDFEEF5525B43ED95C /* IMProcessManager.m */; };
+		31DE5E2B557A643FFD5F2612 /* IMDockerFileFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DE5747EB6AF373B12AD6BD /* IMDockerFileFinder.m */; };
+		31DE5EBCCC3F8B78559EBE4E /* IMDockerComposePortScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DE5BC341A520F63F2C748D /* IMDockerComposePortScanner.m */; };
 		B1619E4E09DC759FE6EA950F /* libPods-intermodal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB10AE686A03CDE02662AE83 /* libPods-intermodal.a */; };
 /* End PBXBuildFile section */
 
@@ -26,12 +29,18 @@
 		038836E81C854825005C5984 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		038836EB1C854825005C5984 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		038836ED1C854825005C5984 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31DE509BC247A49347D77433 /* IMDockerFileFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMDockerFileFinder.h; sourceTree = "<group>"; };
 		31DE51D149FF8B3B81F30CEE /* IMVirtualBoxClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMVirtualBoxClient.h; sourceTree = "<group>"; };
 		31DE53AC773A66B5983E6E5B /* IMStatusBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMStatusBarController.m; sourceTree = "<group>"; };
 		31DE54FD483755416C822475 /* IMStatusBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMStatusBarController.h; sourceTree = "<group>"; };
 		31DE55C3A7C425AC16E7CED8 /* IMSyncManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMSyncManager.h; sourceTree = "<group>"; };
+		31DE56AB40B45AB04D2B17AE /* IMRsyncDaemon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMRsyncDaemon.h; sourceTree = "<group>"; };
 		31DE56D1CE994212D07044EA /* IMProcessManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMProcessManager.h; sourceTree = "<group>"; };
+		31DE57205E2B3ECC35F12714 /* IMDockerComposePortScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMDockerComposePortScanner.h; sourceTree = "<group>"; };
+		31DE5747EB6AF373B12AD6BD /* IMDockerFileFinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMDockerFileFinder.m; sourceTree = "<group>"; };
 		31DE57FDFEEF5525B43ED95C /* IMProcessManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMProcessManager.m; sourceTree = "<group>"; };
+		31DE596164924F034E4BC394 /* IMRsyncDaemon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMRsyncDaemon.m; sourceTree = "<group>"; };
+		31DE5BC341A520F63F2C748D /* IMDockerComposePortScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMDockerComposePortScanner.m; sourceTree = "<group>"; };
 		31DE5C53C6594C535BB6FAC7 /* IMSyncManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMSyncManager.m; sourceTree = "<group>"; };
 		31DE5DD58489165BC6F6D155 /* IMVirtualBoxClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMVirtualBoxClient.m; sourceTree = "<group>"; };
 		5ED404EE84A03A193144590E /* Pods-intermodal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-intermodal.release.xcconfig"; path = "Pods/Target Support Files/Pods-intermodal/Pods-intermodal.release.xcconfig"; sourceTree = "<group>"; };
@@ -86,6 +95,12 @@
 				31DE55C3A7C425AC16E7CED8 /* IMSyncManager.h */,
 				31DE57FDFEEF5525B43ED95C /* IMProcessManager.m */,
 				31DE56D1CE994212D07044EA /* IMProcessManager.h */,
+				31DE596164924F034E4BC394 /* IMRsyncDaemon.m */,
+				31DE56AB40B45AB04D2B17AE /* IMRsyncDaemon.h */,
+				31DE5747EB6AF373B12AD6BD /* IMDockerFileFinder.m */,
+				31DE509BC247A49347D77433 /* IMDockerFileFinder.h */,
+				31DE5BC341A520F63F2C748D /* IMDockerComposePortScanner.m */,
+				31DE57205E2B3ECC35F12714 /* IMDockerComposePortScanner.h */,
 			);
 			path = intermodal;
 			sourceTree = "<group>";
@@ -241,6 +256,9 @@
 				31DE547BA7826B3522A0F58D /* IMVirtualBoxClient.m in Sources */,
 				31DE5681890A4A7F7CA4F8F2 /* IMSyncManager.m in Sources */,
 				31DE5CBD67FD4CF1C435E44F /* IMProcessManager.m in Sources */,
+				31DE501CC4CDFBCE58ABA986 /* IMRsyncDaemon.m in Sources */,
+				31DE5E2B557A643FFD5F2612 /* IMDockerFileFinder.m in Sources */,
+				31DE5EBCCC3F8B78559EBE4E /* IMDockerComposePortScanner.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

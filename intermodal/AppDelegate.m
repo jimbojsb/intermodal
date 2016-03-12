@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "IMStatusBarController.h"
+#import "IMDockerFileFinder.h"
 
 @interface AppDelegate ()
 
@@ -20,6 +21,9 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     NSStatusItem *statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSSquareStatusItemLength];
     self.statusBarController = [[IMStatusBarController alloc] initWithStatusItem:statusItem];
+    self.syncManager = [IMSyncManager new];
+    [self.syncManager listen];
+    NSArray *dockerProjectRoots = [[[IMDockerFileFinder alloc] initWithPath:[NSString stringWithFormat:@"%@/%@", NSHomeDirectory(), @"/projects"]] scan];
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {

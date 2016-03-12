@@ -4,5 +4,5 @@
 # use_frameworks!
 
 target 'intermodal' do
-pod 'SOAPEngine', '~> 1.26'
+  pod 'CDEvents', '~> 1.2'
 end
