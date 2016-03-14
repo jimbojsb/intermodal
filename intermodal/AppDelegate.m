@@ -21,9 +21,12 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     NSStatusItem *statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSSquareStatusItemLength];
     self.statusBarController = [[IMStatusBarController alloc] initWithStatusItem:statusItem];
-    self.syncManager = [IMSyncManager new];
+    NSString *projectsPath = [NSString stringWithFormat:@"%@/%@", NSHomeDirectory(), @"projects"];
+    NSArray *dockerProjectRoots = [[[IMDockerFileFinder alloc] initWithPath:projectsPath ] scan];
+    self.syncManager = [[IMSyncManager alloc] initWithRoot:projectsPath watchedDirs:dockerProjectRoots];
+    [self.syncManager syncAll];
+    [self.syncManager runRsyncDaemon];
     [self.syncManager listen];
-    NSArray *dockerProjectRoots = [[[IMDockerFileFinder alloc] initWithPath:[NSString stringWithFormat:@"%@/%@", NSHomeDirectory(), @"/projects"]] scan];
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {

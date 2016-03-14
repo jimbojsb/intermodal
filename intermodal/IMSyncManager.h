@@ -9,8 +9,13 @@
 @interface IMSyncManager : NSObject
 
 @property CDEvents *fsEventsStream;
+@property NSArray *watchedDirs;
+@property NSString *root;
 
+- (id)initWithRoot:(NSString *)root watchedDirs:(NSArray *)watchedDirs;
 - (void) listen;
-- (void) rsyncPath:(NSString *)path;
+- (void) syncSubpathOfRoot:(NSString *)path;
+- (void) runRsyncDaemon;
+- (void) syncAll;
 
 @end
