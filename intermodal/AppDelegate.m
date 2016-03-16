@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "IMStatusBarController.h"
 #import "IMDockerFileFinder.h"
+#import "IMProcessManager.h"
 
 @interface AppDelegate ()
 
@@ -23,10 +24,14 @@
     self.statusBarController = [[IMStatusBarController alloc] initWithStatusItem:statusItem];
     NSString *projectsPath = [NSString stringWithFormat:@"%@/%@", NSHomeDirectory(), @"projects"];
     NSArray *dockerProjectRoots = [[[IMDockerFileFinder alloc] initWithPath:projectsPath ] scan];
-    self.syncManager = [[IMSyncManager alloc] initWithRoot:projectsPath watchedDirs:dockerProjectRoots];
-    [self.syncManager syncAll];
-    [self.syncManager runRsyncDaemon];
-    [self.syncManager listen];
+
+    IMProcessManager *processManager = [IMProcessManager new];
+
+    self.outboundSyncManager = [[IMOutboundSyncManager alloc] initWithLocalRoot:projectsPath watchedDirs:dockerProjectRoots processManager:processManager];
+    [self.outboundSyncManager syncAllWatchedSubpathsToRemote];
+    [self.outboundSyncManager listen];
+    self.inboundSyncManager = [[IMInboundSyncManager alloc] initWithLocalRoot:projectsPath remoteRoot:@"/sync" processManager:processManager];
+    [self.inboundSyncManager listen];
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {

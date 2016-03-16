@@ -8,12 +8,14 @@
 
 #import <Cocoa/Cocoa.h>
 #import "IMStatusBarController.h"
-#import "IMSyncManager.h"
+#import "IMOutboundSyncManager.h"
+#import "IMInboundSyncManager.h"
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
 @property IMStatusBarController *statusBarController;
-@property IMSyncManager *syncManager;
+@property IMOutboundSyncManager *outboundSyncManager;
+@property IMInboundSyncManager *inboundSyncManager;
 
 @end
 

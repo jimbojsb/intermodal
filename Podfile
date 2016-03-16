@@ -5,4 +5,5 @@
 
 target 'intermodal' do
   pod 'CDEvents', '~> 1.2'
+  pod 'CocoaAsyncSocket', '~> 7.4'
 end

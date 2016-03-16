@@ -8,6 +8,11 @@
 
 @interface IMProcessManager : NSObject
 
+@property dispatch_queue_t execQueue;
+
 - (void) run:(NSString *)command withArguments:(NSArray *)arguments;
+- (void) runAndWait:(NSString *)command withArguments:(NSArray *)arguments;
+- (NSTask *)taskWithCommand:(NSString *)command arguments:(NSArray *)arguments;
+
 
 @end
