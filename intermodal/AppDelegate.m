@@ -23,17 +23,17 @@
     
     NSStatusItem *statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSSquareStatusItemLength];
     self.statusBarController = [[IMStatusBarController alloc] initWithStatusItem:statusItem];
+
     self.projectsRoot = [NSString stringWithFormat:@"%@/%@", NSHomeDirectory(), @"projects"];
 
     IMProcessManager *processManager = [IMProcessManager new];
 
-    self.outboundSyncManager = [[IMOutboundSyncManager alloc] initWithLocalRoot:self.projectsRoot processManager:processManager];
-    [self.outboundSyncManager syncAllWatchedSubpathsToRemote];
-    [self.outboundSyncManager listen];
-    self.inboundSyncManager = [[IMInboundSyncManager alloc] initWithLocalRoot:self.projectsRoot remoteRoot:@"/sync" processManager:processManager];
-    [self.inboundSyncManager listen];
-    self.vm = [IMVirtualMachine new];
-    [self.vm portsFromComposeFiles];
+//    self.outboundSyncManager = [[IMOutboundSyncManager alloc] initWithLocalRoot:self.projectsRoot processManager:processManager];
+//    [self.outboundSyncManager syncAllWatchedSubpathsToRemote];
+//    [self.outboundSyncManager listen];
+//    self.inboundSyncManager = [[IMInboundSyncManager alloc] initWithLocalRoot:self.projectsRoot remoteRoot:@"/sync" processManager:processManager];
+//    [self.inboundSyncManager listen];
+//    self.vm = [IMVirtualMachine new];
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {

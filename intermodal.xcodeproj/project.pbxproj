@@ -7,25 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		032590C21C9BAB770034D19C /* docker in Resources */ = {isa = PBXBuildFile; fileRef = 032590BF1C9BAB770034D19C /* docker */; };
+		032590C31C9BAB770034D19C /* docker-compose in Resources */ = {isa = PBXBuildFile; fileRef = 032590C01C9BAB770034D19C /* docker-compose */; };
+		032590C41C9BAB770034D19C /* Intermodal-0.4.ova in Resources */ = {isa = PBXBuildFile; fileRef = 032590C11C9BAB770034D19C /* Intermodal-0.4.ova */; };
 		038836E41C854825005C5984 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 038836E31C854825005C5984 /* AppDelegate.m */; };
 		038836E71C854825005C5984 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 038836E61C854825005C5984 /* main.m */; };
 		038836E91C854825005C5984 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 038836E81C854825005C5984 /* Assets.xcassets */; };
 		038836EC1C854825005C5984 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 038836EA1C854825005C5984 /* MainMenu.xib */; };
 		31DE501CC4CDFBCE58ABA986 /* IMRsyncDaemon.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DE596164924F034E4BC394 /* IMRsyncDaemon.m */; };
+		31DE527E8E79CA5870BE7CF7 /* IMEnvironmentSetup.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DE592B58FEF6E468614103 /* IMEnvironmentSetup.m */; };
 		31DE536CCB895D97B97931E3 /* IMProject.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DE54010DC07D1802A5220D /* IMProject.m */; };
 		31DE547BA7826B3522A0F58D /* IMVirtualBoxClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DE5DD58489165BC6F6D155 /* IMVirtualBoxClient.m */; };
 		31DE5681890A4A7F7CA4F8F2 /* IMOutboundSyncManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DE5C53C6594C535BB6FAC7 /* IMOutboundSyncManager.m */; };
 		31DE56E366C6F8CE553DFEB1 /* IMInboundSyncManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DE52FDEDF02D1C598335BE /* IMInboundSyncManager.m */; };
-		31DE584049E0C3A406051361 /* getbinaries.sh in Resources */ = {isa = PBXBuildFile; fileRef = 31DE599FB4E074AF39C32C3A /* getbinaries.sh */; };
 		31DE59415CD361F7E335EA80 /* IMStatusBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DE53AC773A66B5983E6E5B /* IMStatusBarController.m */; };
-		31DE5BBF87092582C27E5534 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 31DE527BCB71A726B9C38C73 /* .gitignore */; };
 		31DE5CBD67FD4CF1C435E44F /* IMProcessManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DE57FDFEEF5525B43ED95C /* IMProcessManager.m */; };
 		31DE5D8FC8EE97035C90CDB0 /* IMVirtualMachine.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DE55DDDB4CEE5F4EFA2D4A /* IMVirtualMachine.m */; };
 		31DE5E2B557A643FFD5F2612 /* IMDockerFileFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DE5747EB6AF373B12AD6BD /* IMDockerFileFinder.m */; };
+		31DE5EC7847257CCDCA5205B /* IMPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DE5378E523BACBC4F2E4AB /* IMPopoverController.m */; };
 		98D5C2C3AE7B8A1BB66FB53C /* libPods-intermodal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88D59CF521DAB2DA6FCAF773 /* libPods-intermodal.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		032590BF1C9BAB770034D19C /* docker */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = docker; sourceTree = "<group>"; };
+		032590C01C9BAB770034D19C /* docker-compose */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = "docker-compose"; sourceTree = "<group>"; };
+		032590C11C9BAB770034D19C /* Intermodal-0.4.ova */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Intermodal-0.4.ova"; sourceTree = "<group>"; };
 		038836DF1C854825005C5984 /* intermodal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = intermodal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		038836E21C854825005C5984 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		038836E31C854825005C5984 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -33,20 +39,25 @@
 		038836E81C854825005C5984 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		038836EB1C854825005C5984 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		038836ED1C854825005C5984 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03B1E9411C9C861A00CE65F5 /* intermodal-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "intermodal-Prefix.pch"; sourceTree = "<group>"; };
 		31DE509BC247A49347D77433 /* IMDockerFileFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMDockerFileFinder.h; sourceTree = "<group>"; };
 		31DE51D149FF8B3B81F30CEE /* IMVirtualBoxClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMVirtualBoxClient.h; sourceTree = "<group>"; };
 		31DE527BCB71A726B9C38C73 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = file.gitignore; path = .gitignore; sourceTree = "<group>"; };
+		31DE52EA536F1B69BEBF4CBF /* IMPopoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMPopoverController.h; sourceTree = "<group>"; };
 		31DE52FDEDF02D1C598335BE /* IMInboundSyncManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMInboundSyncManager.m; sourceTree = "<group>"; };
+		31DE5378E523BACBC4F2E4AB /* IMPopoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMPopoverController.m; sourceTree = "<group>"; };
 		31DE53AC773A66B5983E6E5B /* IMStatusBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMStatusBarController.m; sourceTree = "<group>"; };
 		31DE54010DC07D1802A5220D /* IMProject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMProject.m; sourceTree = "<group>"; };
 		31DE54FD483755416C822475 /* IMStatusBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMStatusBarController.h; sourceTree = "<group>"; };
 		31DE55C3A7C425AC16E7CED8 /* IMOutboundSyncManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMOutboundSyncManager.h; sourceTree = "<group>"; };
 		31DE55DDDB4CEE5F4EFA2D4A /* IMVirtualMachine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMVirtualMachine.m; sourceTree = "<group>"; };
+		31DE55F660D952DF638740EF /* IMEnvironmentSetup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMEnvironmentSetup.h; sourceTree = "<group>"; };
 		31DE56AB40B45AB04D2B17AE /* IMRsyncDaemon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMRsyncDaemon.h; sourceTree = "<group>"; };
 		31DE56D1CE994212D07044EA /* IMProcessManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMProcessManager.h; sourceTree = "<group>"; };
 		31DE5747EB6AF373B12AD6BD /* IMDockerFileFinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMDockerFileFinder.m; sourceTree = "<group>"; };
 		31DE57A405BE604B47DA2E76 /* IMVirtualMachine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMVirtualMachine.h; sourceTree = "<group>"; };
 		31DE57FDFEEF5525B43ED95C /* IMProcessManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMProcessManager.m; sourceTree = "<group>"; };
+		31DE592B58FEF6E468614103 /* IMEnvironmentSetup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMEnvironmentSetup.m; sourceTree = "<group>"; };
 		31DE594C20F14247F3270754 /* IMInboundSyncManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMInboundSyncManager.h; sourceTree = "<group>"; };
 		31DE596164924F034E4BC394 /* IMRsyncDaemon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMRsyncDaemon.m; sourceTree = "<group>"; };
 		31DE599FB4E074AF39C32C3A /* getbinaries.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = getbinaries.sh; sourceTree = "<group>"; };
@@ -73,6 +84,7 @@
 		038836D61C854825005C5984 = {
 			isa = PBXGroup;
 			children = (
+				03B1E9411C9C861A00CE65F5 /* intermodal-Prefix.pch */,
 				038836E11C854825005C5984 /* intermodal */,
 				038836E01C854825005C5984 /* Products */,
 				31DE5C90AE5B7F50BC83EDF7 /* binaries */,
@@ -116,6 +128,10 @@
 				31DE57A405BE604B47DA2E76 /* IMVirtualMachine.h */,
 				31DE54010DC07D1802A5220D /* IMProject.m */,
 				31DE5B2F2B4668121A1F62B8 /* IMProject.h */,
+				31DE592B58FEF6E468614103 /* IMEnvironmentSetup.m */,
+				31DE55F660D952DF638740EF /* IMEnvironmentSetup.h */,
+				31DE5378E523BACBC4F2E4AB /* IMPopoverController.m */,
+				31DE52EA536F1B69BEBF4CBF /* IMPopoverController.h */,
 			);
 			path = intermodal;
 			sourceTree = "<group>";
@@ -131,6 +147,9 @@
 		31DE5C90AE5B7F50BC83EDF7 /* binaries */ = {
 			isa = PBXGroup;
 			children = (
+				032590BF1C9BAB770034D19C /* docker */,
+				032590C01C9BAB770034D19C /* docker-compose */,
+				032590C11C9BAB770034D19C /* Intermodal-0.4.ova */,
 				31DE599FB4E074AF39C32C3A /* getbinaries.sh */,
 				31DE527BCB71A726B9C38C73 /* .gitignore */,
 			);
@@ -161,12 +180,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 038836F01C854825005C5984 /* Build configuration list for PBXNativeTarget "intermodal" */;
 			buildPhases = (
-				C1426662898FDF12562DCBF8 /* 📦 Check Pods Manifest.lock */,
+				107615DA6A5BC3889EFD51BC /* 📦 Check Pods Manifest.lock */,
+				C1426662898FDF12562DCBF8 /* uD83DuDCE6 Check Pods Manifest.lock */,
 				038836DB1C854825005C5984 /* Sources */,
 				038836DC1C854825005C5984 /* Frameworks */,
 				038836DD1C854825005C5984 /* Resources */,
-				3E7CA9C551BEA2AE8390EA14 /* 📦 Embed Pods Frameworks */,
-				DBF709C0DA66AAA5360CAE0E /* 📦 Copy Pods Resources */,
+				3E7CA9C551BEA2AE8390EA14 /* uD83DuDCE6 Embed Pods Frameworks */,
+				DBF709C0DA66AAA5360CAE0E /* uD83DuDCE6 Copy Pods Resources */,
+				8CAC5A13FF2E5A6BB18B006E /* 📦 Embed Pods Frameworks */,
+				903751070470D8D2FCC941D3 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -188,6 +210,7 @@
 				TargetAttributes = {
 					038836DE1C854825005C5984 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = L23V22UKM5;
 					};
 				};
 			};
@@ -214,39 +237,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				032590C21C9BAB770034D19C /* docker in Resources */,
 				038836E91C854825005C5984 /* Assets.xcassets in Resources */,
 				038836EC1C854825005C5984 /* MainMenu.xib in Resources */,
-				31DE584049E0C3A406051361 /* getbinaries.sh in Resources */,
-				31DE5BBF87092582C27E5534 /* .gitignore in Resources */,
+				032590C41C9BAB770034D19C /* Intermodal-0.4.ova in Resources */,
+				032590C31C9BAB770034D19C /* docker-compose in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3E7CA9C551BEA2AE8390EA14 /* 📦 Embed Pods Frameworks */ = {
+		107615DA6A5BC3889EFD51BC /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "\uD83D\uDCE6 Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-intermodal/Pods-intermodal-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C1426662898FDF12562DCBF8 /* 📦 Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "\uD83D\uDCE6 Check Pods Manifest.lock";
+			name = "📦 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,14 +263,74 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		DBF709C0DA66AAA5360CAE0E /* 📦 Copy Pods Resources */ = {
+		3E7CA9C551BEA2AE8390EA14 /* uD83DuDCE6 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "\uD83D\uDCE6 Copy Pods Resources";
+			name = "uD83DuDCE6 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-intermodal/Pods-intermodal-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CAC5A13FF2E5A6BB18B006E /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-intermodal/Pods-intermodal-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		903751070470D8D2FCC941D3 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-intermodal/Pods-intermodal-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1426662898FDF12562DCBF8 /* uD83DuDCE6 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "uD83DuDCE6 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DBF709C0DA66AAA5360CAE0E /* uD83DuDCE6 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "uD83DuDCE6 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +356,8 @@
 				31DE56E366C6F8CE553DFEB1 /* IMInboundSyncManager.m in Sources */,
 				31DE5D8FC8EE97035C90CDB0 /* IMVirtualMachine.m in Sources */,
 				31DE536CCB895D97B97931E3 /* IMProject.m in Sources */,
+				31DE527E8E79CA5870BE7CF7 /* IMEnvironmentSetup.m in Sources */,
+				31DE5EC7847257CCDCA5205B /* IMPopoverController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,6 +464,7 @@
 					"$(inherited)",
 					"$(USER_LIBRARY_DIR)/Frameworks",
 				);
+				GCC_PREFIX_HEADER = "intermodal-Prefix.pch";
 				INFOPLIST_FILE = intermodal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.joshbutts.intermodal;
@@ -410,6 +482,7 @@
 					"$(inherited)",
 					"$(USER_LIBRARY_DIR)/Frameworks",
 				);
+				GCC_PREFIX_HEADER = "intermodal/intermodal-Prefix.pch";
 				INFOPLIST_FILE = intermodal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.joshbutts.intermodal;

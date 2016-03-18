@@ -5,10 +5,12 @@
 
 #import <Foundation/Foundation.h>
 #import <AppKit/AppKit.h>
+#import "IMPopoverController.h"
 
 @interface IMStatusBarController : NSObject
 
 @property NSStatusItem *statusItem;
+@property IMPopoverController *popoverController;
 
 - (id) initWithStatusItem:(NSStatusItem *)statusItem;
 

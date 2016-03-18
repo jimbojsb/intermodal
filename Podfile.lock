@@ -7,15 +7,18 @@ PODS:
     - CocoaAsyncSocket/RunLoop
   - CocoaAsyncSocket/GCD (7.4.3)
   - CocoaAsyncSocket/RunLoop (7.4.3)
+  - Masonry (0.6.4)
 
 DEPENDENCIES:
   - CDEvents (~> 1.2)
   - CocoaAsyncSocket (~> 7.4)
+  - Masonry (~> 0.6)
 
 SPEC CHECKSUMS:
   CDEvents: f311f23de13414f4b3625f1a663b2e1d9a85d982
   CocoaAsyncSocket: a18c75dca4b08723628a0bacca6e94803d90be91
+  Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
 
-PODFILE CHECKSUM: 3c07db80361f9009066e8e5275b50d71432f1da3
+PODFILE CHECKSUM: 3797e484a42878440f4d59cf5c92a61a9c32a26c
 
 COCOAPODS: 1.0.0.beta.6

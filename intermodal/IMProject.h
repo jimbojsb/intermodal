@@ -11,8 +11,10 @@
 @property NSArray *ports;
 @property NSArray *outboundSyncRules;
 @property NSArray *inboundSyncRules;
-@property NSString *projectRootpath;
+@property NSString *projectFilePath;
 @property NSString *absolutePath;
-@property NSString *relativePath;
+
+- (id)initWithProjectFilePath:(NSString *)path;
+- (void)loadProjectFileSettings;
 
 @end

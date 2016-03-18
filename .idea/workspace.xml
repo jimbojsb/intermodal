@@ -2,33 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cda987eb-2ab6-49e0-8674-6a0e0f498bbc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/intermodal/Assets.xcassets/status-icon.imageset/whale9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/intermodal/Assets.xcassets/status-icon.imageset/whale_icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/binaries/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/binaries/getbinaries.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/intermodal/IMProject.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/intermodal/IMProject.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/intermodal/IMVirtualMachine.m" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/binaries/docker" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/binaries/docker-compose" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/intermodal/Assets.xcassets/status-icon.imageset/icon-22.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/intermodal/Assets.xcassets/status-icon.imageset/icon-44.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/intermodal/IMDockerComposePortScanner.m" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/intermodal/IMDockerComposePortScanner.h" afterPath="$PROJECT_DIR$/intermodal/IMVirtualMachine.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/intermodal-Prefix.pch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/intermodal/IMEnvironmentSetup.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/intermodal/IMEnvironmentSetup.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/intermodal/IMPopoverController.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/intermodal/IMPopoverController.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/intermodal.iml" afterPath="$PROJECT_DIR$/.idea/intermodal.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Podfile" afterPath="$PROJECT_DIR$/Podfile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Podfile.lock" afterPath="$PROJECT_DIR$/Podfile.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/intermodal.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/intermodal.xcodeproj/project.pbxproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/intermodal/AppDelegate.h" afterPath="$PROJECT_DIR$/intermodal/AppDelegate.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/intermodal/AppDelegate.m" afterPath="$PROJECT_DIR$/intermodal/AppDelegate.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/intermodal/Assets.xcassets/status-icon.imageset/Contents.json" afterPath="$PROJECT_DIR$/intermodal/Assets.xcassets/status-icon.imageset/Contents.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/intermodal/Base.lproj/MainMenu.xib" afterPath="$PROJECT_DIR$/intermodal/Base.lproj/MainMenu.xib" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/intermodal/IMDockerFileFinder.h" afterPath="$PROJECT_DIR$/intermodal/IMDockerFileFinder.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/intermodal/IMDockerFileFinder.m" afterPath="$PROJECT_DIR$/intermodal/IMDockerFileFinder.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/intermodal/IMInboundSyncManager.m" afterPath="$PROJECT_DIR$/intermodal/IMInboundSyncManager.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/intermodal/IMOutboundSyncManager.h" afterPath="$PROJECT_DIR$/intermodal/IMOutboundSyncManager.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/intermodal/IMOutboundSyncManager.m" afterPath="$PROJECT_DIR$/intermodal/IMOutboundSyncManager.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/intermodal/IMProcessManager.m" afterPath="$PROJECT_DIR$/intermodal/IMProcessManager.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/intermodal/IMProject.h" afterPath="$PROJECT_DIR$/intermodal/IMProject.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/intermodal/IMProject.m" afterPath="$PROJECT_DIR$/intermodal/IMProject.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/intermodal/IMStatusBarController.h" afterPath="$PROJECT_DIR$/intermodal/IMStatusBarController.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/intermodal/IMStatusBarController.m" afterPath="$PROJECT_DIR$/intermodal/IMStatusBarController.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/intermodal/IMVirtualMachine.h" afterPath="$PROJECT_DIR$/intermodal/IMVirtualMachine.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/intermodal/IMVirtualMachine.m" afterPath="$PROJECT_DIR$/intermodal/IMVirtualMachine.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/intermodal/Info.plist" afterPath="$PROJECT_DIR$/intermodal/Info.plist" />
     </list>
     <ignored path="intermodal.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -49,63 +40,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AppDelegate.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/intermodal/AppDelegate.h">
+      <file leaf-file-name="Podfile" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Podfile">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-              <folding>
-                <element signature="e#134#157#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IMProcessManager.m" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/intermodal/IMProcessManager.m">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="26" column="6" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IMProject.m" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/intermodal/IMProject.m">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IMProject.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/intermodal/IMProject.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="getbinaries.sh" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/binaries/getbinaries.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.15691869">
-              <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/binaries/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -115,19 +54,70 @@
         <entry file="file://$PROJECT_DIR$/intermodal/IMVirtualMachine.m">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
+              <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
               <folding>
-                <marker date="1458180577000" expanded="true" signature="345:958" placeholder="{...}" />
+                <marker date="1458272709000" expanded="true" signature="255:259" placeholder="{...}" />
+                <marker date="1458272709000" expanded="true" signature="274:278" placeholder="{...}" />
+                <marker date="1458272709000" expanded="true" signature="301:305" placeholder="{...}" />
+                <marker date="1458272709000" expanded="true" signature="322:326" placeholder="{...}" />
+                <marker date="1458272709000" expanded="true" signature="344:348" placeholder="{...}" />
+                <marker date="1458272709000" expanded="true" signature="372:376" placeholder="{...}" />
+                <marker date="1458272709000" expanded="true" signature="401:405" placeholder="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IMVirtualMachine.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/intermodal/IMVirtualMachine.h">
+      <file leaf-file-name="IMStatusBarController.m" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/intermodal/IMStatusBarController.m">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+              <caret line="15" column="54" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
+              <folding>
+                <marker date="1458326280000" expanded="true" signature="171:786" placeholder="..." />
+                <marker date="1458326280000" expanded="true" signature="225:784" placeholder="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IMPopoverController.m" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/intermodal/IMPopoverController.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.06593407">
+              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="intermodal-Prefix.pch" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/intermodal-Prefix.pch">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IMPopoverController.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/intermodal/IMPopoverController.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="8" column="49" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
+              <folding>
+                <element signature="e#98#131#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IMStatusBarController.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/intermodal/IMStatusBarController.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -137,17 +127,30 @@
         <entry file="file://$PROJECT_DIR$/intermodal/AppDelegate.m">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="35" column="36" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="36" />
+              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IMOutboundSyncManager.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/intermodal/IMOutboundSyncManager.h">
+      <file leaf-file-name="IMEnvironmentSetup.m" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/intermodal/IMEnvironmentSetup.m">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+              <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+              <folding>
+                <marker date="1458272709000" expanded="true" signature="194:198" placeholder="{...}" />
+                <marker date="1458272709000" expanded="true" signature="224:228" placeholder="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IMEnvironmentSetup.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/intermodal/IMEnvironmentSetup.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -162,8 +165,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/IMStatusItem.h" />
-        <option value="$PROJECT_DIR$/intermodal/IMStatusBarController.h" />
-        <option value="$PROJECT_DIR$/intermodal/IMStatusBarController.m" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/intermodal/IMRsyncDaemon.h" />
         <option value="$PROJECT_DIR$/intermodal/IMRsyncDaemon.m" />
@@ -176,21 +177,29 @@
         <option value="$PROJECT_DIR$/intermodal/IMInotifySocketServer.h" />
         <option value="$PROJECT_DIR$/intermodal/IMInboundSyncManager.h" />
         <option value="$PROJECT_DIR$/intermodal/IMInboundSyncManager.m" />
-        <option value="$PROJECT_DIR$/Podfile" />
         <option value="$PROJECT_DIR$/intermodal/IMDockerComposePortScanner.h" />
         <option value="$PROJECT_DIR$/intermodal/IMDockerComposePortScanner.m" />
         <option value="$PROJECT_DIR$/intermodal/IMDockerFileFinder.h" />
         <option value="$PROJECT_DIR$/intermodal/IMDockerFileFinder.m" />
         <option value="$PROJECT_DIR$/intermodal/IMOutboundSyncManager.h" />
         <option value="$PROJECT_DIR$/intermodal/IMOutboundSyncManager.m" />
-        <option value="$PROJECT_DIR$/intermodal/IMVirtualMachine.h" />
         <option value="$PROJECT_DIR$/intermodal/AppDelegate.h" />
-        <option value="$PROJECT_DIR$/intermodal/IMVirtualMachine.m" />
-        <option value="$PROJECT_DIR$/intermodal/AppDelegate.m" />
         <option value="$PROJECT_DIR$/intermodal/IMProcessManager.m" />
-        <option value="$PROJECT_DIR$/intermodal/IMProject.h" />
         <option value="$PROJECT_DIR$/binaries/.gitignore" />
         <option value="$PROJECT_DIR$/binaries/getbinaries.sh" />
+        <option value="$PROJECT_DIR$/intermodal/IMProject.h" />
+        <option value="$PROJECT_DIR$/intermodal/IMProject.m" />
+        <option value="$PROJECT_DIR$/intermodal/IMVirtualMachine.h" />
+        <option value="$PROJECT_DIR$/intermodal/IMEnvironmentSetup.h" />
+        <option value="$PROJECT_DIR$/intermodal/IMEnvironmentSetup.m" />
+        <option value="$PROJECT_DIR$/intermodal/IMVirtualMachine.m" />
+        <option value="$PROJECT_DIR$/intermodal/AppDelegate.m" />
+        <option value="$PROJECT_DIR$/intermodal/IMStatusBarController.h" />
+        <option value="$PROJECT_DIR$/intermodal/IMPopoverController.h" />
+        <option value="$PROJECT_DIR$/intermodal/IMStatusBarController.m" />
+        <option value="$PROJECT_DIR$/Podfile" />
+        <option value="$PROJECT_DIR$/intermodal-Prefix.pch" />
+        <option value="$PROJECT_DIR$/intermodal/IMPopoverController.m" />
       </list>
     </option>
   </component>
@@ -202,8 +211,8 @@
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="824" />
+    <option name="width" value="1920" />
+    <option name="height" value="1124" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -237,14 +246,8 @@
               <option name="myItemId" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="intermodal" />
+              <option name="myItemId" value="Pods" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -257,8 +260,36 @@
               <option name="myItemId" value="intermodal" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="intermodal" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="intermodal" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="intermodal" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="intermodal" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Supporting Files" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -367,11 +398,19 @@
       </EXTENSION>
       <method />
     </configuration>
-    <list size="4">
+    <configuration default="false" name="Masonry" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="Pods" TARGET_NAME="Masonry" CONFIG_NAME="Debug" SCHEME_NAME="Masonry" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
+        <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
+      </EXTENSION>
+      <method />
+    </configuration>
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.Pods-intermodal" />
       <item index="1" class="java.lang.String" itemvalue="Application.intermodal" />
       <item index="2" class="java.lang.String" itemvalue="Application.CDEvents" />
       <item index="3" class="java.lang.String" itemvalue="Application.CocoaAsyncSocket" />
+      <item index="4" class="java.lang.String" itemvalue="Application.Masonry" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -388,17 +427,17 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="824" extended-state="6" />
+    <frame x="0" y="23" width="1920" height="1124" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24444444" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18333334" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3251029" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.324587" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5308642" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.53061223" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -452,71 +491,16 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/intermodal/AppDelegate.m</url>
-          <line>35</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="15" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/intermodal/IMInboundSyncManager.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
-          <folding>
-            <element signature="e#98#130#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Podfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/intermodal/IMStatusBarController.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/intermodal/IMStatusBarController.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/intermodal/IMVirtualBoxClient.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/intermodal/IMVirtualBoxClient.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/intermodal/IMOutboundSyncManager.m">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#98#128#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -589,9 +573,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#98#128#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -667,13 +649,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/intermodal/IMStatusBarController.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/intermodal/IMRsyncDaemon.h">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -695,13 +670,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/intermodal/IMStatusBarController.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25081432">
-          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSStatusBar.h">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.30456027">
@@ -719,14 +687,6 @@
     <entry file="file://$USER_HOME$/Downloads/whale7.png">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Podfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="22" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/intermodal/IMDockerFileFinder.h">
@@ -750,7 +710,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
           <folding>
-            <element signature="e#98#130#0" expanded="true" />
+            <element signature="e#98#130#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -759,34 +719,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="26" column="55" selection-start-line="26" selection-start-column="55" selection-end-line="26" selection-end-column="55" />
-          <folding>
-            <element signature="e#98#128#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/intermodal/IMVirtualMachine.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/intermodal/IMVirtualMachine.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
-          <folding>
-            <marker date="1458180577000" expanded="true" signature="345:958" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/intermodal/AppDelegate.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="36" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="36" />
           <folding />
         </state>
       </provider>
@@ -812,7 +744,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding>
-            <element signature="e#134#157#0" expanded="true" />
+            <element signature="e#134#157#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -825,7 +757,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/intermodal/IMProject.m">
+    <entry file="file://$PROJECT_DIR$/binaries/getbinaries.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15691869">
+          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/binaries/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.031383738">
+          <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/intermodal/Info.plist">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -836,23 +784,119 @@
     <entry file="file://$PROJECT_DIR$/intermodal/IMProject.h">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/binaries/.gitignore">
+    <entry file="file://$PROJECT_DIR$/intermodal/IMProject.m">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/binaries/getbinaries.sh">
+    <entry file="file://$PROJECT_DIR$/intermodal/IMVirtualMachine.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15691869">
-          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/intermodal/IMEnvironmentSetup.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/intermodal/IMEnvironmentSetup.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+          <folding>
+            <marker date="1458272709000" expanded="true" signature="194:198" placeholder="{...}" />
+            <marker date="1458272709000" expanded="true" signature="224:228" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/intermodal/IMVirtualMachine.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
+          <folding>
+            <marker date="1458272709000" expanded="true" signature="255:259" placeholder="{...}" />
+            <marker date="1458272709000" expanded="true" signature="274:278" placeholder="{...}" />
+            <marker date="1458272709000" expanded="true" signature="301:305" placeholder="{...}" />
+            <marker date="1458272709000" expanded="true" signature="322:326" placeholder="{...}" />
+            <marker date="1458272709000" expanded="true" signature="344:348" placeholder="{...}" />
+            <marker date="1458272709000" expanded="true" signature="372:376" placeholder="{...}" />
+            <marker date="1458272709000" expanded="true" signature="401:405" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/intermodal/AppDelegate.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/intermodal/IMStatusBarController.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/intermodal/IMStatusBarController.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="54" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
+          <folding>
+            <marker date="1458326280000" expanded="true" signature="171:786" placeholder="..." />
+            <marker date="1458326280000" expanded="true" signature="225:784" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/intermodal/IMPopoverController.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="49" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
+          <folding>
+            <element signature="e#98#131#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Podfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/intermodal-Prefix.pch">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/intermodal/IMPopoverController.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.06593407">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>

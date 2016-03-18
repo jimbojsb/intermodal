@@ -3,30 +3,38 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/Podfile" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/intermodal-Prefix.pch" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/intermodal/IMProcessManager.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/intermodal/Info.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/intermodal/IMEnvironmentSetup.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/intermodal/AppDelegate.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/intermodal/main.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/intermodal/Info.plist" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/intermodal/IMDockerFileFinder.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/intermodal/IMInboundSyncManager.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/intermodal/IMRsyncDaemon.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/intermodal/IMProject.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/intermodal/IMDockerFileFinder.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/intermodal/IMPopoverController.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/intermodal/Assets.xcassets" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/intermodal/IMInboundSyncManager.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/intermodal/IMStatusBarController.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/intermodal/IMOutboundSyncManager.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/intermodal/IMInboundSyncManager.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/intermodal/IMVirtualBoxClient.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/intermodal/IMStatusBarController.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/intermodal/IMRsyncDaemon.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/intermodal/IMVirtualMachine.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/intermodal/IMVirtualBoxClient.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/intermodal/IMOutboundSyncManager.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/intermodal/IMDockerFileFinder.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/intermodal/IMVirtualBoxClient.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/intermodal/IMRsyncDaemon.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/intermodal/Base.lproj/MainMenu.xib" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/intermodal/IMVirtualBoxClient.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/intermodal/IMPopoverController.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/intermodal/IMProject.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/intermodal/AppDelegate.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/intermodal/IMVirtualMachine.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/intermodal/IMProcessManager.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/intermodal/IMProject.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/intermodal/IMEnvironmentSetup.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/intermodal/AppDelegate.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/intermodal/IMVirtualMachine.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/binaries/Intermodal-0.4.ova" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/binaries/docker" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/binaries/docker-compose" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/binaries/.gitignore" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/binaries/getbinaries.sh" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/CDEvents/CDEvent.h" isTestSource="false" />
@@ -37,17 +45,45 @@
       <sourceFolder url="file://$MODULE_DIR$/Pods/CDEvents/CDEvent.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-intermodal/Pods-intermodal.debug.xcconfig" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-intermodal/Pods-intermodal-resources.sh" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-intermodal/Pods-intermodal-frameworks.sh" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-intermodal/Pods-intermodal-acknowledgements.markdown" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-intermodal/Pods-intermodal-acknowledgements.plist" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-intermodal/Pods-intermodal.release.xcconfig" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-intermodal/Pods-intermodal-frameworks.sh" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-intermodal/Pods-intermodal-dummy.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/CDEvents/CDEvents-dummy.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/CDEvents/CDEvents-prefix.pch" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/CDEvents/CDEvents.xcconfig" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-dummy.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket.xcconfig" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-prefix.pch" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Masonry/Masonry-prefix.pch" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Masonry/Masonry.xcconfig" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Masonry/Masonry-dummy.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/CDEvents/CDEvents.xcconfig" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/CDEvents/CDEvents-prefix.pch" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/CDEvents/CDEvents-dummy.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Masonry/Masonry/MASConstraint.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Masonry/Masonry/MASConstraint+Private.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Masonry/Masonry/NSArray+MASAdditions.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Masonry/Masonry/Masonry.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Masonry/Masonry/ViewController+MASAdditions.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Masonry/Masonry/MASConstraintMaker.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Masonry/Masonry/MASViewConstraint.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Masonry/Masonry/View+MASAdditions.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Masonry/Masonry/MASLayoutConstraint.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Masonry/Masonry/MASConstraintMaker.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Masonry/Masonry/MASCompositeConstraint.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Masonry/Masonry/View+MASAdditions.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Masonry/Masonry/MASLayoutConstraint.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Masonry/Masonry/MASCompositeConstraint.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Masonry/Masonry/MASViewAttribute.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Masonry/Masonry/MASViewConstraint.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Masonry/Masonry/View+MASShorthandAdditions.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Masonry/Masonry/NSLayoutConstraint+MASDebugAdditions.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Masonry/Masonry/MASViewAttribute.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Masonry/Masonry/MASUtilities.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Masonry/Masonry/NSLayoutConstraint+MASDebugAdditions.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Masonry/Masonry/MASConstraint.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Masonry/Masonry/ViewController+MASAdditions.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Masonry/Masonry/NSArray+MASAdditions.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Masonry/Masonry/NSArray+MASShorthandAdditions.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/CocoaAsyncSocket/Source/RunLoop/AsyncUdpSocket.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/CocoaAsyncSocket/Source/RunLoop/AsyncUdpSocket.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/CocoaAsyncSocket/Source/RunLoop/AsyncSocket.h" isTestSource="false" />
