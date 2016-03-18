@@ -11,6 +11,8 @@
 @property NSString *path;
 
 - (id)initWithPath:(NSString *)path;
-- (NSArray *)scan;
+- (NSArray *)scanForDockerfiles;
+- (NSArray *)scanForDockerComposeFiles;
+- (NSArray *)scanForFilename:(NSString *)filename;
 
 @end

@@ -20,18 +20,20 @@
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
+    
     NSStatusItem *statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSSquareStatusItemLength];
     self.statusBarController = [[IMStatusBarController alloc] initWithStatusItem:statusItem];
-    NSString *projectsPath = [NSString stringWithFormat:@"%@/%@", NSHomeDirectory(), @"projects"];
-    NSArray *dockerProjectRoots = [[[IMDockerFileFinder alloc] initWithPath:projectsPath ] scan];
+    self.projectsRoot = [NSString stringWithFormat:@"%@/%@", NSHomeDirectory(), @"projects"];
 
     IMProcessManager *processManager = [IMProcessManager new];
 
-    self.outboundSyncManager = [[IMOutboundSyncManager alloc] initWithLocalRoot:projectsPath watchedDirs:dockerProjectRoots processManager:processManager];
+    self.outboundSyncManager = [[IMOutboundSyncManager alloc] initWithLocalRoot:self.projectsRoot processManager:processManager];
     [self.outboundSyncManager syncAllWatchedSubpathsToRemote];
     [self.outboundSyncManager listen];
-    self.inboundSyncManager = [[IMInboundSyncManager alloc] initWithLocalRoot:projectsPath remoteRoot:@"/sync" processManager:processManager];
+    self.inboundSyncManager = [[IMInboundSyncManager alloc] initWithLocalRoot:self.projectsRoot remoteRoot:@"/sync" processManager:processManager];
     [self.inboundSyncManager listen];
+    self.vm = [IMVirtualMachine new];
+    [self.vm portsFromComposeFiles];
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {

@@ -63,9 +63,7 @@
                 @"--port",
                 @"2873",
                 @"-rtqz",
-                @"--delete",
                 @"--links",
-                @"--ignore-missing-args"
                 @"--exclude=.git/",
                 remotePath,
                 localPath

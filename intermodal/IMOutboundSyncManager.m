@@ -3,17 +3,19 @@
 // Copyright (c) 2016 joshbutts. All rights reserved.
 //
 
+#import "IMDockerFileFinder.h"
 #import "IMOutboundSyncManager.h"
 #import "IMProcessManager.h"
 
 @implementation IMOutboundSyncManager
 
-- (id)initWithLocalRoot:(NSString *)root watchedDirs:(NSArray *)watchedDirs processManager:(IMProcessManager *)processManager {
+- (id)initWithLocalRoot:(NSString *)root processManager:(IMProcessManager *)processManager {
     self = [super init];
     self.localRoot = root;
     NSMutableArray *cleanedDirs = [NSMutableArray new];
-    for (NSString *dir in watchedDirs) {
-        [cleanedDirs addObject:[dir stringByReplacingOccurrencesOfString:self.localRoot withString:@""]];
+    NSArray *dockerfilePaths = [[[IMDockerFileFinder alloc] initWithPath:root] scanForDockerfiles];
+    for (NSString *dockerFilePath in dockerfilePaths) {
+        [cleanedDirs addObject:[[dockerFilePath stringByDeletingLastPathComponent] stringByReplacingOccurrencesOfString:self.localRoot withString:@""]];
     }
     self.localWatchedDirs = [NSArray arrayWithArray:cleanedDirs];
     self.pm = processManager;
@@ -51,7 +53,6 @@
             @"2873",
             @"-rtqz",
             @"--delete",
-            @"--ignore-missing-args"
             @"--links",
             @"--exclude=.git/",
             localPath,

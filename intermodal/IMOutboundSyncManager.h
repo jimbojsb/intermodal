@@ -15,7 +15,7 @@
 @property NSArray *localWatchedDirs;
 @property NSString *localRoot;
 @property IMProcessManager *pm;
-- (id)initWithLocalRoot:(NSString *)root watchedDirs:(NSArray *)watchedDirs processManager:(IMProcessManager *)processManager;
+- (id)initWithLocalRoot:(NSString *)root processManager:(IMProcessManager *)processManager;
 - (void)listen;
 - (void)syncSubpathOfRootToRemote:(NSString *)path;
 - (void)syncAllWatchedSubpathsToRemote;
