@@ -14,10 +14,8 @@
 		038836E71C854825005C5984 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 038836E61C854825005C5984 /* main.m */; };
 		038836E91C854825005C5984 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 038836E81C854825005C5984 /* Assets.xcassets */; };
 		038836EC1C854825005C5984 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 038836EA1C854825005C5984 /* MainMenu.xib */; };
-		31DE501CC4CDFBCE58ABA986 /* IMRsyncDaemon.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DE596164924F034E4BC394 /* IMRsyncDaemon.m */; };
 		31DE527E8E79CA5870BE7CF7 /* IMEnvironmentSetup.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DE592B58FEF6E468614103 /* IMEnvironmentSetup.m */; };
 		31DE536CCB895D97B97931E3 /* IMProject.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DE54010DC07D1802A5220D /* IMProject.m */; };
-		31DE547BA7826B3522A0F58D /* IMVirtualBoxClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DE5DD58489165BC6F6D155 /* IMVirtualBoxClient.m */; };
 		31DE5681890A4A7F7CA4F8F2 /* IMSyncManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DE5C53C6594C535BB6FAC7 /* IMSyncManager.m */; };
 		31DE5686BDB5F592F0598B1F /* IMSyncContainerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DE5D944ADC461E5A78CB9A /* IMSyncContainerManager.m */; };
 		31DE56E366C6F8CE553DFEB1 /* IMInboundSyncManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DE52FDEDF02D1C598335BE /* IMInboundSyncManager.m */; };
@@ -41,7 +39,6 @@
 		038836EB1C854825005C5984 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		038836ED1C854825005C5984 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03B1E9411C9C861A00CE65F5 /* intermodal-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "intermodal-Prefix.pch"; sourceTree = "<group>"; };
-		31DE51D149FF8B3B81F30CEE /* IMVirtualBoxClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMVirtualBoxClient.h; sourceTree = "<group>"; };
 		31DE527BCB71A726B9C38C73 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = file.gitignore; path = .gitignore; sourceTree = "<group>"; };
 		31DE52AFD0036F7F76024786 /* intermodal-env.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "intermodal-env.sh"; sourceTree = "<group>"; };
 		31DE52EA536F1B69BEBF4CBF /* IMPopoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMPopoverController.h; sourceTree = "<group>"; };
@@ -53,19 +50,16 @@
 		31DE55C3A7C425AC16E7CED8 /* IMSyncManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMSyncManager.h; sourceTree = "<group>"; };
 		31DE55DDDB4CEE5F4EFA2D4A /* IMVirtualMachine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMVirtualMachine.m; sourceTree = "<group>"; };
 		31DE55F660D952DF638740EF /* IMEnvironmentSetup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMEnvironmentSetup.h; sourceTree = "<group>"; };
-		31DE56AB40B45AB04D2B17AE /* IMRsyncDaemon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMRsyncDaemon.h; sourceTree = "<group>"; };
 		31DE56C990ED786EE5BE7347 /* IMSyncContainerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMSyncContainerManager.h; sourceTree = "<group>"; };
 		31DE56D1CE994212D07044EA /* IMProcessManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMProcessManager.h; sourceTree = "<group>"; };
 		31DE57A405BE604B47DA2E76 /* IMVirtualMachine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMVirtualMachine.h; sourceTree = "<group>"; };
 		31DE57FDFEEF5525B43ED95C /* IMProcessManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMProcessManager.m; sourceTree = "<group>"; };
 		31DE592B58FEF6E468614103 /* IMEnvironmentSetup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMEnvironmentSetup.m; sourceTree = "<group>"; };
 		31DE594C20F14247F3270754 /* IMInboundSyncManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMInboundSyncManager.h; sourceTree = "<group>"; };
-		31DE596164924F034E4BC394 /* IMRsyncDaemon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMRsyncDaemon.m; sourceTree = "<group>"; };
 		31DE599FB4E074AF39C32C3A /* getbinaries.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = getbinaries.sh; sourceTree = "<group>"; };
 		31DE5B2F2B4668121A1F62B8 /* IMProject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMProject.h; sourceTree = "<group>"; };
 		31DE5C53C6594C535BB6FAC7 /* IMSyncManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMSyncManager.m; sourceTree = "<group>"; };
 		31DE5D944ADC461E5A78CB9A /* IMSyncContainerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMSyncContainerManager.m; sourceTree = "<group>"; };
-		31DE5DD58489165BC6F6D155 /* IMVirtualBoxClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMVirtualBoxClient.m; sourceTree = "<group>"; };
 		88D59CF521DAB2DA6FCAF773 /* libPods-intermodal.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-intermodal.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		905BCAD3971AD0A0CA8F8254 /* Pods-intermodal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-intermodal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-intermodal/Pods-intermodal.debug.xcconfig"; sourceTree = "<group>"; };
 		B3AC620F6B21122DE38AEB1C /* Pods-intermodal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-intermodal.release.xcconfig"; path = "Pods/Target Support Files/Pods-intermodal/Pods-intermodal.release.xcconfig"; sourceTree = "<group>"; };
@@ -114,14 +108,10 @@
 				038836E51C854825005C5984 /* Supporting Files */,
 				31DE53AC773A66B5983E6E5B /* IMStatusBarController.m */,
 				31DE54FD483755416C822475 /* IMStatusBarController.h */,
-				31DE5DD58489165BC6F6D155 /* IMVirtualBoxClient.m */,
-				31DE51D149FF8B3B81F30CEE /* IMVirtualBoxClient.h */,
 				31DE5C53C6594C535BB6FAC7 /* IMSyncManager.m */,
 				31DE55C3A7C425AC16E7CED8 /* IMSyncManager.h */,
 				31DE57FDFEEF5525B43ED95C /* IMProcessManager.m */,
 				31DE56D1CE994212D07044EA /* IMProcessManager.h */,
-				31DE596164924F034E4BC394 /* IMRsyncDaemon.m */,
-				31DE56AB40B45AB04D2B17AE /* IMRsyncDaemon.h */,
 				31DE52FDEDF02D1C598335BE /* IMInboundSyncManager.m */,
 				31DE594C20F14247F3270754 /* IMInboundSyncManager.h */,
 				31DE55DDDB4CEE5F4EFA2D4A /* IMVirtualMachine.m */,
@@ -352,10 +342,8 @@
 				038836E71C854825005C5984 /* main.m in Sources */,
 				038836E41C854825005C5984 /* AppDelegate.m in Sources */,
 				31DE59415CD361F7E335EA80 /* IMStatusBarController.m in Sources */,
-				31DE547BA7826B3522A0F58D /* IMVirtualBoxClient.m in Sources */,
 				31DE5681890A4A7F7CA4F8F2 /* IMSyncManager.m in Sources */,
 				31DE5CBD67FD4CF1C435E44F /* IMProcessManager.m in Sources */,
-				31DE501CC4CDFBCE58ABA986 /* IMRsyncDaemon.m in Sources */,
 				31DE56E366C6F8CE553DFEB1 /* IMInboundSyncManager.m in Sources */,
 				31DE5D8FC8EE97035C90CDB0 /* IMVirtualMachine.m in Sources */,
 				31DE536CCB895D97B97931E3 /* IMProject.m in Sources */,

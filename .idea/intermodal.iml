@@ -13,18 +13,14 @@
       <sourceFolder url="file://$MODULE_DIR$/intermodal/IMInboundSyncManager.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/intermodal/IMProject.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/intermodal/IMSyncContainerManager.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/intermodal/IMPopoverController.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/intermodal/IMInboundSyncManager.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/intermodal/IMStatusBarController.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/intermodal/IMSyncManager.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/intermodal/IMVirtualMachine.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/intermodal/IMSyncManager.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/intermodal/IMVirtualBoxClient.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/intermodal/IMStatusBarController.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/intermodal/IMRsyncDaemon.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/intermodal/IMVirtualMachine.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/intermodal/IMVirtualBoxClient.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/intermodal/IMRsyncDaemon.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/intermodal/IMPopoverController.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/intermodal/Base.lproj/MainMenu.xib" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/intermodal/IMPopoverController.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/intermodal/IMProject.m" isTestSource="false" />
