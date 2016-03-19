@@ -8,8 +8,8 @@
 
 #import "AppDelegate.h"
 #import "IMStatusBarController.h"
-#import "IMDockerFileFinder.h"
 #import "IMProcessManager.h"
+#import "IMEnvironmentSetup.h"
 
 @interface AppDelegate ()
 
@@ -23,6 +23,8 @@
     
     NSStatusItem *statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSSquareStatusItemLength];
     self.statusBarController = [[IMStatusBarController alloc] initWithStatusItem:statusItem];
+
+    [IMEnvironmentSetup setupBashProfile];
 
     self.projectsRoot = [NSString stringWithFormat:@"%@/%@", NSHomeDirectory(), @"projects"];
 

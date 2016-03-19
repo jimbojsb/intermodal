@@ -22,10 +22,9 @@
 		31DE5686BDB5F592F0598B1F /* IMSyncContainerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DE5D944ADC461E5A78CB9A /* IMSyncContainerManager.m */; };
 		31DE56E366C6F8CE553DFEB1 /* IMInboundSyncManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DE52FDEDF02D1C598335BE /* IMInboundSyncManager.m */; };
 		31DE59415CD361F7E335EA80 /* IMStatusBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DE53AC773A66B5983E6E5B /* IMStatusBarController.m */; };
-		31DE5BF97437F704BFCE52E1 /* bashenv.sh in Resources */ = {isa = PBXBuildFile; fileRef = 31DE52AFD0036F7F76024786 /* bashenv.sh */; };
+		31DE5BF97437F704BFCE52E1 /* intermodal-env.sh in Resources */ = {isa = PBXBuildFile; fileRef = 31DE52AFD0036F7F76024786 /* intermodal-env.sh */; };
 		31DE5CBD67FD4CF1C435E44F /* IMProcessManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DE57FDFEEF5525B43ED95C /* IMProcessManager.m */; };
 		31DE5D8FC8EE97035C90CDB0 /* IMVirtualMachine.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DE55DDDB4CEE5F4EFA2D4A /* IMVirtualMachine.m */; };
-		31DE5E2B557A643FFD5F2612 /* IMDockerFileFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DE5747EB6AF373B12AD6BD /* IMDockerFileFinder.m */; };
 		31DE5EC7847257CCDCA5205B /* IMPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DE5378E523BACBC4F2E4AB /* IMPopoverController.m */; };
 		98D5C2C3AE7B8A1BB66FB53C /* libPods-intermodal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88D59CF521DAB2DA6FCAF773 /* libPods-intermodal.a */; };
 /* End PBXBuildFile section */
@@ -42,10 +41,9 @@
 		038836EB1C854825005C5984 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		038836ED1C854825005C5984 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03B1E9411C9C861A00CE65F5 /* intermodal-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "intermodal-Prefix.pch"; sourceTree = "<group>"; };
-		31DE509BC247A49347D77433 /* IMDockerFileFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMDockerFileFinder.h; sourceTree = "<group>"; };
 		31DE51D149FF8B3B81F30CEE /* IMVirtualBoxClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMVirtualBoxClient.h; sourceTree = "<group>"; };
 		31DE527BCB71A726B9C38C73 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = file.gitignore; path = .gitignore; sourceTree = "<group>"; };
-		31DE52AFD0036F7F76024786 /* bashenv.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = bashenv.sh; sourceTree = "<group>"; };
+		31DE52AFD0036F7F76024786 /* intermodal-env.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "intermodal-env.sh"; sourceTree = "<group>"; };
 		31DE52EA536F1B69BEBF4CBF /* IMPopoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMPopoverController.h; sourceTree = "<group>"; };
 		31DE52FDEDF02D1C598335BE /* IMInboundSyncManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMInboundSyncManager.m; sourceTree = "<group>"; };
 		31DE5378E523BACBC4F2E4AB /* IMPopoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMPopoverController.m; sourceTree = "<group>"; };
@@ -58,7 +56,6 @@
 		31DE56AB40B45AB04D2B17AE /* IMRsyncDaemon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMRsyncDaemon.h; sourceTree = "<group>"; };
 		31DE56C990ED786EE5BE7347 /* IMSyncContainerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMSyncContainerManager.h; sourceTree = "<group>"; };
 		31DE56D1CE994212D07044EA /* IMProcessManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMProcessManager.h; sourceTree = "<group>"; };
-		31DE5747EB6AF373B12AD6BD /* IMDockerFileFinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMDockerFileFinder.m; sourceTree = "<group>"; };
 		31DE57A405BE604B47DA2E76 /* IMVirtualMachine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMVirtualMachine.h; sourceTree = "<group>"; };
 		31DE57FDFEEF5525B43ED95C /* IMProcessManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMProcessManager.m; sourceTree = "<group>"; };
 		31DE592B58FEF6E468614103 /* IMEnvironmentSetup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMEnvironmentSetup.m; sourceTree = "<group>"; };
@@ -125,8 +122,6 @@
 				31DE56D1CE994212D07044EA /* IMProcessManager.h */,
 				31DE596164924F034E4BC394 /* IMRsyncDaemon.m */,
 				31DE56AB40B45AB04D2B17AE /* IMRsyncDaemon.h */,
-				31DE5747EB6AF373B12AD6BD /* IMDockerFileFinder.m */,
-				31DE509BC247A49347D77433 /* IMDockerFileFinder.h */,
 				31DE52FDEDF02D1C598335BE /* IMInboundSyncManager.m */,
 				31DE594C20F14247F3270754 /* IMInboundSyncManager.h */,
 				31DE55DDDB4CEE5F4EFA2D4A /* IMVirtualMachine.m */,
@@ -159,7 +154,7 @@
 				032590C11C9BAB770034D19C /* Intermodal-0.4.ova */,
 				31DE599FB4E074AF39C32C3A /* getbinaries.sh */,
 				31DE527BCB71A726B9C38C73 /* .gitignore */,
-				31DE52AFD0036F7F76024786 /* bashenv.sh */,
+				31DE52AFD0036F7F76024786 /* intermodal-env.sh */,
 			);
 			path = binaries;
 			sourceTree = "<group>";
@@ -250,7 +245,7 @@
 				038836EC1C854825005C5984 /* MainMenu.xib in Resources */,
 				032590C41C9BAB770034D19C /* Intermodal-0.4.ova in Resources */,
 				032590C31C9BAB770034D19C /* docker-compose in Resources */,
-				31DE5BF97437F704BFCE52E1 /* bashenv.sh in Resources */,
+				31DE5BF97437F704BFCE52E1 /* intermodal-env.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,7 +356,6 @@
 				31DE5681890A4A7F7CA4F8F2 /* IMSyncManager.m in Sources */,
 				31DE5CBD67FD4CF1C435E44F /* IMProcessManager.m in Sources */,
 				31DE501CC4CDFBCE58ABA986 /* IMRsyncDaemon.m in Sources */,
-				31DE5E2B557A643FFD5F2612 /* IMDockerFileFinder.m in Sources */,
 				31DE56E366C6F8CE553DFEB1 /* IMInboundSyncManager.m in Sources */,
 				31DE5D8FC8EE97035C90CDB0 /* IMVirtualMachine.m in Sources */,
 				31DE536CCB895D97B97931E3 /* IMProject.m in Sources */,

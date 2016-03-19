@@ -8,7 +8,6 @@
 
 @interface IMEnvironmentSetup : NSObject
 
-+ (void)setupDockerEnvVars;
-+ (void)symlinkBinaries;
++ (void)setupBashProfile;
 
 @end

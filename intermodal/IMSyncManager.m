@@ -3,7 +3,6 @@
 // Copyright (c) 2016 joshbutts. All rights reserved.
 //
 
-#import "IMDockerFileFinder.h"
 #import "IMSyncManager.h"
 #import "IMProcessManager.h"
 #import "IMProject.h"

@@ -6,7 +6,6 @@
 #import "IMVirtualMachine.h"
 #import <Cocoa/Cocoa.h>
 #import "AppDelegate.h"
-#import "IMDockerFileFinder.h"
 
 @implementation IMVirtualMachine
 
