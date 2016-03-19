@@ -27,10 +27,10 @@
     self.projectsRoot = [NSString stringWithFormat:@"%@/%@", NSHomeDirectory(), @"projects"];
 
     IMProcessManager *processManager = [IMProcessManager new];
+    self.outboundSyncManager = [[IMSyncManager alloc] initWithLocalRoot:self.projectsRoot processManager:processManager];
+    [self.outboundSyncManager syncAllLocalToRemote];
+    [self.outboundSyncManager listen];
 
-//    self.outboundSyncManager = [[IMOutboundSyncManager alloc] initWithLocalRoot:self.projectsRoot processManager:processManager];
-//    [self.outboundSyncManager syncAllWatchedSubpathsToRemote];
-//    [self.outboundSyncManager listen];
 //    self.inboundSyncManager = [[IMInboundSyncManager alloc] initWithLocalRoot:self.projectsRoot remoteRoot:@"/sync" processManager:processManager];
 //    [self.inboundSyncManager listen];
 //    self.vm = [IMVirtualMachine new];

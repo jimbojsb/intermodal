@@ -22,9 +22,9 @@
 
 - (void)runAndWait:(NSString *)command withArguments:(NSArray *)arguments {
     NSTask *task = [self taskWithCommand:command arguments:arguments];
-    NSLog(@"running %@ %@", command, [arguments componentsJoinedByString:@" "]);
-    //[task launch];
-    //[task waitUntilExit];
+    NSLog(@"%@ %@", command, [arguments componentsJoinedByString:@" "]);
+    [task launch];
+    [task waitUntilExit];
 }
 
 - (NSTask *)taskWithCommand:(NSString *)command arguments:(NSArray *)arguments {

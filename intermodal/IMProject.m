@@ -19,8 +19,8 @@
 - (void)loadProjectFileSettings {
     NSDictionary *settings = [[NSDictionary alloc] initWithContentsOfFile:self.projectFilePath];
     self.ports = settings[@"ports"];
-    self.inboundSyncRules = settings[@"sync"][@"in"];
-    self.outboundSyncRules = settings[@"sync"][@"out"];
+    self.inboundInclude = settings[@"sync"][@"in"][@"include"];
+    self.outboundExclude = settings[@"sync"][@"out"][@"exclude"];
 }
 
 

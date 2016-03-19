@@ -9,8 +9,8 @@
 @interface IMProject : NSObject
 
 @property NSArray *ports;
-@property NSArray *outboundSyncRules;
-@property NSArray *inboundSyncRules;
+@property NSArray *outboundExclude;
+@property NSArray *inboundInclude;
 @property NSString *projectFilePath;
 @property NSString *absolutePath;
 
