@@ -10,8 +10,7 @@
 
 + (void)setupBashProfile {
 
-    NSString *envScript = [NSString stringWithFormat:@"alias docker=%@\n", [[NSBundle mainBundle] pathForResource:@"docker" ofType:nil]];
-    envScript = [envScript stringByAppendingString:[NSString stringWithFormat:@"alias docker-compose=%@\n", [[NSBundle mainBundle] pathForResource:@"docker-compose" ofType:nil]]];
+    NSString *envScript = [NSString stringWithFormat:@"export PATH=$PATH:%@\n", [[NSBundle mainBundle] resourcePath]];
     envScript = [envScript stringByAppendingString:@"export DOCKER_HOST=tcp://127.0.0.1:2375"];
 
     NSString *envScriptFilename = [NSString stringWithFormat:@"%@/intermodal-env.sh", [[NSBundle mainBundle] resourcePath]];
