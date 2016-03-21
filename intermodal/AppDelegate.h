@@ -15,7 +15,7 @@
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
 @property IMStatusBarController *statusBarController;
-@property IMSyncManager *outboundSyncManager;
+@property IMSyncManager *syncManager;
 @property IMInboundSyncManager *inboundSyncManager;
 @property IMVirtualMachine *vm;
 @property NSString *projectsRoot;

@@ -26,12 +26,24 @@
 
     [IMEnvironmentSetup setupBashProfile];
 
-    self.projectsRoot = [NSString stringWithFormat:@"%@/%@", NSHomeDirectory(), @"projects"];
+    NSString *projectRoot = [NSString stringWithFormat:@"%@/%@", NSHomeDirectory(), @"projects"];
+    self.syncManager = [[IMSyncManager alloc] initWithRoot:projectRoot];
 
-    IMProcessManager *processManager = [IMProcessManager new];
-    self.outboundSyncManager = [[IMSyncManager alloc] initWithLocalRoot:self.projectsRoot processManager:processManager];
-    [self.outboundSyncManager syncAllLocalToRemote];
-    [self.outboundSyncManager listen];
+    NSMutableArray *portsToForward = [NSMutableArray new];
+    for (IMProject *p in self.syncManager.projects) {
+        [portsToForward addObjectsFromArray:p.ports];
+    }
+
+    if (![IMVirtualMachine exists]) {
+        [IMVirtualMachine importFromOVA];
+    }
+    [IMVirtualMachine forwardPorts:portsToForward];
+    [IMVirtualMachine start];
+
+//
+//
+//    [self.syncManager syncAllLocalToRemote];
+//    [self.syncManager listen];
 
 //    self.inboundSyncManager = [[IMInboundSyncManager alloc] initWithLocalRoot:self.projectsRoot remoteRoot:@"/sync" processManager:processManager];
 //    [self.inboundSyncManager listen];
@@ -39,7 +51,7 @@
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
-    // Insert code here to tear down your application
+    [IMVirtualMachine stop];
 }
 
 @end

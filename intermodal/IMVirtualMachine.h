@@ -5,23 +5,19 @@
 
 #import <Foundation/Foundation.h>
 
-#define VM_STATE_RUNNING 1
-#define VM_STATE_STOPPED 2
-#define VM_STATE_ABORTED 3
-#define VM_STATE_SAVED 4
+#define VM_NAME @"Intermodal-0.4"
+#define VBOXMANAGE @"/usr/local/bin/VBoxManage"
 
 @interface IMVirtualMachine : NSObject
 
 @property NSString *name;
 @property NSArray *forwardedPorts;
-@property int state;
+@property bool isRunning;
 
-- (void)start;
-- (void)stop;
-- (void)forwardPorts;
-- (void)delete;
-- (void)refresh;
++ (void)start;
++ (void)stop;
++ (void)forwardPorts:(NSArray *)ports;
 + (void)importFromOVA;
-+ (void)removeExisting;
++ (bool)exists;
 
 @end

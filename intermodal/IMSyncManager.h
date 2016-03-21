@@ -13,12 +13,10 @@
 @interface IMSyncManager : NSObject
 
 @property CDEvents *fsEventsStream;
-@property NSArray *localWatchedDirs;
-@property NSString *localRoot;
-@property IMProcessManager *pm;
+@property NSString *root;
 @property NSArray *projects;
 
-- (id)initWithLocalRoot:(NSString *)root processManager:(IMProcessManager *)processManager;
+- (id)initWithRoot:(NSString *)root;
 - (void)listen;
 
 - (void)syncPath:(NSString *)fromPath toPath:(NSString *)toPath withProject:(IMProject *)project;
