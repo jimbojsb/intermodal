@@ -64,7 +64,9 @@
             @"--natpf1",
             @"ssh,tcp,,2222,,22",
             @"--natpf1",
-            @"rsync,tcp,,2873,,2873"
+            @"rsync,tcp,,2873,,2873",
+            @"--natpf1",
+            @"inotify,tcp,,2874,,2874"
     ]];
 
     for (NSNumber *n in ports) {
@@ -93,5 +95,13 @@
     NSTask *task = [NSTask launchedTaskWithLaunchPath:VBOXMANAGE arguments:@[@"import", [[NSBundle mainBundle] pathForResource:VM_NAME ofType:@"ova"]]];
     [task waitUntilExit];
 }
+
++ (bool)dockerIsRunning {
+    NSTask *task = [NSTask launchedTaskWithLaunchPath:[[NSBundle mainBundle] pathForResource:@"docker" ofType:nil] arguments:@[@"-H", DOCKER_HOST, @"version"]];
+    [task waitUntilExit];
+    int exitCode = [task terminationStatus];
+    return exitCode == 0;
+}
+
 
 @end

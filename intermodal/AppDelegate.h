@@ -9,14 +9,12 @@
 #import <Cocoa/Cocoa.h>
 #import "IMStatusBarController.h"
 #import "IMSyncManager.h"
-#import "IMInboundSyncManager.h"
 #import "IMVirtualMachine.h"
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
 @property IMStatusBarController *statusBarController;
 @property IMSyncManager *syncManager;
-@property IMInboundSyncManager *inboundSyncManager;
 @property IMVirtualMachine *vm;
 @property NSString *projectsRoot;
 

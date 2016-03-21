@@ -4,8 +4,6 @@
 //
 
 #import "IMSyncManager.h"
-#import "IMProcessManager.h"
-#import "IMProject.h"
 
 @implementation IMSyncManager
 
@@ -13,6 +11,9 @@
     self = [super init];
     self.root = root;
     self.projects = [self findProjects];
+    self.rsyncDispatchQueue = dispatch_queue_create("com.joshbutts.intermodal.rsync", DISPATCH_QUEUE_SERIAL);
+    self.inotifyReceiveQueue = dispatch_queue_create("com.joshbutts.intermodal.inotify", NULL);
+    self.inotifyFlushQueue = [NSMutableOrderedSet new];
     return self;
 }
 
@@ -36,7 +37,7 @@
             initWithURLs:urls
                    block:^(CDEvents *watcher, CDEvent *event) {
                        NSString *absolutePath = [event.URL path];
-                       [self syncPath:absolutePath toPath:[self remotePathWithLocalPath:absolutePath] withProject:[self projectContainingPath:absolutePath]];
+                       [self syncLocalPath:absolutePath toRemotePath:[self remotePathWithLocalPath:absolutePath]];
                    }
                onRunLoop:[NSRunLoop currentRunLoop]
     sinceEventIdentifier:kCDEventsSinceEventNow
@@ -46,8 +47,8 @@
      streamCreationFlags:kCDEventsDefaultEventStreamFlags];
 }
 
-- (void)syncPath:(NSString *)fromPath toPath:(NSString *)toPath withProject:(IMProject *)project {
-    NSString *rsyncCommand = @"/usr/bin/rsync";
+- (void)syncLocalPath:(NSString *)fromPath toRemotePath:(NSString *)toPath {
+    IMProject *project = [self projectContainingPath:fromPath];
     NSMutableArray *rsyncArguments = [[NSMutableArray alloc] initWithArray:@[
             @"--port",
             @"2873",
@@ -65,12 +66,35 @@
 
     [rsyncArguments addObject:fromPath];
     [rsyncArguments addObject:toPath];
-    //[self.pm run:rsyncCommand withArguments:rsyncArguments];
+    [self rsyncWithArguments:rsyncArguments];
 }
+
+- (void)syncRemotePath:(NSString *)fromPath toLocalPath:(NSString *)toPath {
+    IMProject *project = [self projectContainingPath:toPath];
+    NSMutableArray *rsyncArguments = [[NSMutableArray alloc] initWithArray:@[
+            @"--port",
+            @"2873",
+            @"-rtqz",
+            @"--delete",
+            @"--links",
+            @"--exclude=*"
+    ]];
+
+    if ([project.inboundInclude count] > 0) {
+        for (NSString *excludePath in project.inboundInclude) {
+            [rsyncArguments addObject:[NSString stringWithFormat:@"--include=%@", excludePath]];
+        }
+    }
+
+    [rsyncArguments addObject:fromPath];
+    [rsyncArguments addObject:toPath];
+    [self rsyncWithArguments:rsyncArguments];
+}
+
 
 - (void)syncAllLocalToRemote {
     for (IMProject *p in self.projects) {
-        [self syncPath:p.absolutePath toPath:[self remotePathWithLocalPath:p.absolutePath] withProject:p];
+        [self syncLocalPath:p.absolutePath toRemotePath:[self remotePathWithLocalPath:p.absolutePath]];
     }
 }
 
@@ -104,6 +128,54 @@
         }
     }
     return nil;
+}
+
+
+- (void)socket:(GCDAsyncSocket *)sock didReadData:(NSData *)data withTag:(long)tag {
+    dispatch_async(dispatch_get_main_queue(), ^ {
+        NSString *fileChanged = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+        NSString *changedPath = [fileChanged stringByDeletingLastPathComponent];
+        [self.inotifyFlushQueue addObject:changedPath];
+    });
+    [sock readDataToData:[GCDAsyncSocket LFData] withTimeout:-1 tag:0];
+}
+
+- (void)socket:(GCDAsyncSocket *)sock didConnectToHost:(NSString *)host port:(uint16_t)port {
+    NSLog(@"Made inotifystream connection");
+    if (self.connectedSocket != nil) {
+        [self.connectedSocket disconnect];
+    }
+    self.connectedSocket = sock;
+    [self.connectedSocket readDataToData:[GCDAsyncSocket LFData] withTimeout:-1 tag:0];
+}
+
+- (void)connectToInotifyStream {
+    self.inotifySocket = [[GCDAsyncSocket alloc] initWithDelegate:self delegateQueue:self.inotifyReceiveQueue];
+    NSError *err = nil;
+    [self.inotifySocket connectToHost:@"127.0.0.1" onPort:2874 error:&err];
+    if (err != nil) {
+        NSLog(@"%@", err);
+    }
+    [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(inotifyFlush) userInfo:nil repeats:YES];
+}
+
+- (void)inotifyFlush {
+    NSArray *pathsToSync;
+    @synchronized (self) {
+        pathsToSync = [self.inotifyFlushQueue array];
+        self.inotifyFlushQueue = [NSMutableOrderedSet new];
+    }
+    for (NSString *path in pathsToSync) {
+        NSString *remoteRsyncPath = [NSString stringWithFormat:@"127.0.0.1::%@", path];
+        [self syncRemotePath:remoteRsyncPath toLocalPath:[self localPathWithRemotePath:remoteRsyncPath]];
+    }
+}
+
+- (void)rsyncWithArguments:(NSArray *)args {
+    dispatch_async(self.rsyncDispatchQueue, ^{
+        NSLog(@"rsync %@", [args componentsJoinedByString:@" "]);
+        [[NSTask launchedTaskWithLaunchPath:@"/usr/bin/rsync" arguments:args] waitUntilExit];
+    });
 }
 
 

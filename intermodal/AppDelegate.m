@@ -7,9 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import "IMStatusBarController.h"
-#import "IMProcessManager.h"
 #import "IMEnvironmentSetup.h"
+#import "IMSyncContainerManager.h"
 
 @interface AppDelegate ()
 
@@ -40,17 +39,26 @@
     [IMVirtualMachine forwardPorts:portsToForward];
     [IMVirtualMachine start];
 
-//
-//
-//    [self.syncManager syncAllLocalToRemote];
-//    [self.syncManager listen];
+    NSLog(@"Waiting for vm to be ready...");
+    while (![IMVirtualMachine dockerIsRunning]) {
+        [NSThread sleepForTimeInterval:5];
+    }
+    NSLog(@"VM is ready...");
+    NSLog(@"Starting sync container");
 
-//    self.inboundSyncManager = [[IMInboundSyncManager alloc] initWithLocalRoot:self.projectsRoot remoteRoot:@"/sync" processManager:processManager];
-//    [self.inboundSyncManager listen];
-//    self.vm = [IMVirtualMachine new];
+    [IMSyncContainerManager stopContainer];
+    [IMSyncContainerManager runContainer];
+
+
+    [self.syncManager connectToInotifyStream];
+
+    [self.syncManager syncAllLocalToRemote];
+    //[self.syncManager listen];
+
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
+    [IMSyncContainerManager stopContainer];
     [IMVirtualMachine stop];
 }
 

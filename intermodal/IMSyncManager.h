@@ -5,26 +5,35 @@
 
 #import <Foundation/Foundation.h>
 #import <CDEvents/CDEvents.h>
-#import "IMInboundSyncManager.h"
+#import <GCDAsyncSocket.h>
 #import "IMProject.h"
 
 @class IMProcessManager;
 
-@interface IMSyncManager : NSObject
+@interface IMSyncManager : NSObject <GCDAsyncSocketDelegate>
 
 @property CDEvents *fsEventsStream;
 @property NSString *root;
 @property NSArray *projects;
+@property NSMutableOrderedSet *inotifyFlushQueue;
+@property GCDAsyncSocket *inotifySocket;
+@property GCDAsyncSocket *connectedSocket;
+@property dispatch_queue_t inotifyReceiveQueue;
+@property dispatch_queue_t rsyncDispatchQueue;
+@property NSTimer *flushTimer;
 
 - (id)initWithRoot:(NSString *)root;
 - (void)listen;
 
-- (void)syncPath:(NSString *)fromPath toPath:(NSString *)toPath withProject:(IMProject *)project;
+- (void)syncLocalPath:(NSString *)fromPath toRemotePath:(NSString *)toPath;
+- (void)syncRemotePath:(NSString *)fromPath toLocalPath:(NSString *)toPath;
 - (void)syncAllLocalToRemote;
 - (NSArray *)findProjects;
 - (NSString *)remotePathWithLocalPath:(NSString *)localPath;
 - (NSString *)localPathWithRemotePath:(NSString *)remotePath;
 - (IMProject *)projectContainingPath:(NSString *)path;
-
+- (void)connectToInotifyStream;
+- (void)inotifyFlush;
+- (void)rsyncWithArguments:(NSArray *)args;
 
 @end
