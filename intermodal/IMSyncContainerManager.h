@@ -8,7 +8,7 @@
 
 #define SYNC_CONTAINER_NAME @"intermodal-sync"
 #define INOTIFY_CONTAINER_NAME @"intermodal-inotify"
-#define CONTAINER_TAG @"intermodal/sync:0.3.2"
+#define CONTAINER_TAG @"intermodal/sync:0.3.3"
 
 
 @interface IMSyncContainerManager : NSObject

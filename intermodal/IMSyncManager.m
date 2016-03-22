@@ -86,7 +86,7 @@
         for (NSString *includePath in project.inboundInclude) {
             NSArray *includePathComponents = [includePath componentsSeparatedByString:@"/"];
             NSMutableArray *includePathArgumentChunks = [[NSMutableArray alloc] initWithArray:@[projectRemoteRelativeRoot]];
-            for (int i = 0; i < [includePathComponents count] - 1; i++) {
+            for (int i = 0; i < [includePathComponents count]; i++) {
                 NSString *includePathComponent = includePathComponents[i];
                 [includePathArgumentChunks addObject:includePathComponent];
                 [rsyncArguments addObject:[NSString stringWithFormat:@"--include=%@", [[includePathArgumentChunks componentsJoinedByString:@"/"] stringByAppendingString:@"/"]]];
@@ -97,8 +97,8 @@
     }
 
     [rsyncArguments addObject:@"--exclude=*"];
-    [rsyncArguments addObject:[self rsyncPathWithRemotePath:fromPath]];
-    [rsyncArguments addObject:[toPath stringByDeletingLastPathComponent]];
+    [rsyncArguments addObject:[self rsyncPathWithRemotePath:project.absoluteRemotePath]];
+    [rsyncArguments addObject:[project.absoluteLocalPath stringByDeletingLastPathComponent]];
     [self rsyncWithArguments:rsyncArguments];
 }
 
@@ -130,11 +130,25 @@
 }
 
 - (NSString *)localPathWithRemotePath:(NSString *)remotePath {
-    return [NSString stringWithFormat:@"%@/%@", self.root, [remotePath stringByReplacingOccurrencesOfString:@"/sync" withString:@"" options:NSLiteralSearch range:[remotePath rangeOfString:@"/sync"]]];
+    NSRange replaceRange = [remotePath rangeOfString:@"/sync"];
+    if (replaceRange.location != NSNotFound){
+        NSString *pathWithoutSync = [remotePath stringByReplacingCharactersInRange:replaceRange withString:@""];
+        NSString *localPath = [NSString stringWithFormat:@"%@%@", self.root, pathWithoutSync];
+        return localPath;
+    }
+    NSLog(@"Failed to generate an rsync path for %@", remotePath);
+    return nil;
 }
 
 - (NSString *)rsyncPathWithRemotePath:(NSString *)remotePath {
-    return [NSString stringWithFormat:@"127.0.0.1::sync%@", [remotePath stringByReplacingOccurrencesOfString:@"/sync" withString:@"" options:NSLiteralSearch range:[remotePath rangeOfString:@"/sync"]]];
+    NSRange replaceRange = [remotePath rangeOfString:@"/sync"];
+    if (replaceRange.location != NSNotFound){
+        NSString *pathWithoutSync = [remotePath stringByReplacingCharactersInRange:replaceRange withString:@""];
+        NSString *rsyncString = [NSString stringWithFormat:@"127.0.0.1::sync%@", pathWithoutSync];
+        return rsyncString;
+    }
+    NSLog(@"Failed to generate an rsync path for %@", remotePath);
+    return nil;
 }
 
 
@@ -183,7 +197,7 @@
         self.inotifyFlushQueue = [NSMutableOrderedSet new];
     }
     for (NSString *path in pathsToSync) {
-        [self syncRemotePath:[self rsyncPathWithRemotePath:path] toLocalPath:[self localPathWithRemotePath:path]];
+        [self syncRemotePath:path toLocalPath:[self localPathWithRemotePath:path]];
     }
 }
 

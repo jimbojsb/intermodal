@@ -28,7 +28,7 @@
     NSString *projectRoot = [NSString stringWithFormat:@"%@/%@", NSHomeDirectory(), @"projects"];
     self.syncManager = [[IMSyncManager alloc] initWithRoot:projectRoot];
 
-    NSMutableArray *portsToForward = [NSMutableArray new];
+    NSMutableSet *portsToForward = [NSMutableSet new];
     for (IMProject *p in self.syncManager.projects) {
         [portsToForward addObjectsFromArray:p.ports];
     }
@@ -36,7 +36,7 @@
     if (![IMVirtualMachine exists]) {
         [IMVirtualMachine importFromOVA];
     }
-    [IMVirtualMachine forwardPorts:portsToForward];
+    [IMVirtualMachine forwardPorts:[portsToForward allObjects]];
     [IMVirtualMachine start];
 
     NSLog(@"Waiting for vm to be ready...");

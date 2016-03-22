@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		032590C21C9BAB770034D19C /* docker in Resources */ = {isa = PBXBuildFile; fileRef = 032590BF1C9BAB770034D19C /* docker */; };
 		032590C31C9BAB770034D19C /* docker-compose in Resources */ = {isa = PBXBuildFile; fileRef = 032590C01C9BAB770034D19C /* docker-compose */; };
+		0341B4C71CA1C17600D0A90E /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0341B4C61CA1C17600D0A90E /* Media.xcassets */; };
 		038836E41C854825005C5984 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 038836E31C854825005C5984 /* AppDelegate.m */; };
 		038836E71C854825005C5984 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 038836E61C854825005C5984 /* main.m */; };
 		038836E91C854825005C5984 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 038836E81C854825005C5984 /* Assets.xcassets */; };
@@ -27,6 +28,7 @@
 /* Begin PBXFileReference section */
 		032590BF1C9BAB770034D19C /* docker */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = docker; sourceTree = "<group>"; };
 		032590C01C9BAB770034D19C /* docker-compose */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = "docker-compose"; sourceTree = "<group>"; };
+		0341B4C61CA1C17600D0A90E /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		038836DF1C854825005C5984 /* intermodal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = intermodal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		038836E21C854825005C5984 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		038836E31C854825005C5984 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -35,7 +37,7 @@
 		038836EB1C854825005C5984 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		038836ED1C854825005C5984 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03AD93B41CA0F66F0003FE85 /* Intermodal-0.4.1.ova */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Intermodal-0.4.1.ova"; sourceTree = "<group>"; };
-		03B1E9411C9C861A00CE65F5 /* intermodal-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "intermodal-Prefix.pch"; sourceTree = "<group>"; };
+		03B1E9411C9C861A00CE65F5 /* intermodal-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "intermodal-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		31DE527BCB71A726B9C38C73 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = file.gitignore; path = .gitignore; sourceTree = "<group>"; };
 		31DE52EA536F1B69BEBF4CBF /* IMPopoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMPopoverController.h; sourceTree = "<group>"; };
 		31DE5378E523BACBC4F2E4AB /* IMPopoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMPopoverController.m; sourceTree = "<group>"; };
@@ -72,7 +74,6 @@
 		038836D61C854825005C5984 = {
 			isa = PBXGroup;
 			children = (
-				03B1E9411C9C861A00CE65F5 /* intermodal-Prefix.pch */,
 				038836E11C854825005C5984 /* intermodal */,
 				038836E01C854825005C5984 /* Products */,
 				31DE5C90AE5B7F50BC83EDF7 /* binaries */,
@@ -92,6 +93,8 @@
 		038836E11C854825005C5984 /* intermodal */ = {
 			isa = PBXGroup;
 			children = (
+				03B1E9411C9C861A00CE65F5 /* intermodal-Prefix.pch */,
+				0341B4C61CA1C17600D0A90E /* Media.xcassets */,
 				038836E21C854825005C5984 /* AppDelegate.h */,
 				038836E31C854825005C5984 /* AppDelegate.m */,
 				038836E81C854825005C5984 /* Assets.xcassets */,
@@ -221,6 +224,7 @@
 				032590C21C9BAB770034D19C /* docker in Resources */,
 				038836E91C854825005C5984 /* Assets.xcassets in Resources */,
 				038836EC1C854825005C5984 /* MainMenu.xib in Resources */,
+				0341B4C71CA1C17600D0A90E /* Media.xcassets in Resources */,
 				032590C31C9BAB770034D19C /* docker-compose in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -458,7 +462,7 @@
 					"$(inherited)",
 					"$(USER_LIBRARY_DIR)/Frameworks",
 				);
-				GCC_PREFIX_HEADER = "intermodal/intermodal-Prefix.pch";
+				GCC_PREFIX_HEADER = "intermodal-Prefix.pch";
 				INFOPLIST_FILE = intermodal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.joshbutts.intermodal;
