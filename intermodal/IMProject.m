@@ -11,7 +11,8 @@
 - (id)initWithProjectFilePath:(NSString *)path {
     self = [super init];
     self.projectFilePath = path;
-    self.absolutePath = [path stringByDeletingLastPathComponent];
+    self.absoluteLocalPath = [path stringByDeletingLastPathComponent];
+    self.absoluteRemotePath = [NSString stringWithFormat:@"/sync/%@", [[path stringByDeletingLastPathComponent] lastPathComponent]];
     [self loadProjectFileSettings];
     return self;
 }

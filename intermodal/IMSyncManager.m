@@ -23,11 +23,11 @@
     NSMutableArray *urls = [NSMutableArray new];
     NSMutableArray *ignoredUrls = [NSMutableArray new];
     for (IMProject *p in self.projects) {
-        [urls addObject:[NSURL URLWithString:p.absolutePath]];
-        [ignoredUrls addObject:[NSURL URLWithString:[NSString stringWithFormat:@"%@/.git", p.absolutePath]]];
+        [urls addObject:[NSURL URLWithString:p.absoluteLocalPath]];
+        [ignoredUrls addObject:[NSURL URLWithString:[NSString stringWithFormat:@"%@/.git", p.absoluteLocalPath]]];
         if ([p.outboundExclude count] > 0) {
             for (NSString *relativeExcludePath in p.outboundExclude) {
-                NSString *absoluteExcludePath = [NSString stringWithFormat:@"%@/%@", p.absolutePath, relativeExcludePath];
+                NSString *absoluteExcludePath = [NSString stringWithFormat:@"%@/%@", p.absoluteLocalPath, relativeExcludePath];
                 [ignoredUrls addObject:[NSURL URLWithString:absoluteExcludePath]];
             }
         }
@@ -65,7 +65,7 @@
     }
 
     [rsyncArguments addObject:fromPath];
-    [rsyncArguments addObject:toPath];
+    [rsyncArguments addObject:[[self rsyncPathWithRemotePath:toPath] stringByDeletingLastPathComponent]];
     [self rsyncWithArguments:rsyncArguments];
 }
 
@@ -77,24 +77,36 @@
             @"-rtqz",
             @"--delete",
             @"--links",
-            @"--exclude=*"
     ]];
 
+    NSString *projectRemoteRelativeRoot = [project.absoluteRemotePath lastPathComponent];
+    [rsyncArguments addObject:[NSString stringWithFormat:@"--include=%@/", projectRemoteRelativeRoot]];
+
     if ([project.inboundInclude count] > 0) {
-        for (NSString *excludePath in project.inboundInclude) {
-            [rsyncArguments addObject:[NSString stringWithFormat:@"--include=%@", excludePath]];
+        for (NSString *includePath in project.inboundInclude) {
+            NSArray *includePathComponents = [includePath componentsSeparatedByString:@"/"];
+            NSMutableArray *includePathArgumentChunks = [[NSMutableArray alloc] initWithArray:@[projectRemoteRelativeRoot]];
+            for (int i = 0; i < [includePathComponents count] - 1; i++) {
+                NSString *includePathComponent = includePathComponents[i];
+                [includePathArgumentChunks addObject:includePathComponent];
+                [rsyncArguments addObject:[NSString stringWithFormat:@"--include=%@", [[includePathArgumentChunks componentsJoinedByString:@"/"] stringByAppendingString:@"/"]]];
+            }
+            [includePathArgumentChunks addObject:@"***"];
+            [rsyncArguments addObject:[NSString stringWithFormat:@"--include=%@", [includePathArgumentChunks componentsJoinedByString:@"/"]]];
         }
     }
 
-    [rsyncArguments addObject:fromPath];
-    [rsyncArguments addObject:toPath];
+    [rsyncArguments addObject:@"--exclude=*"];
+    [rsyncArguments addObject:[self rsyncPathWithRemotePath:fromPath]];
+    [rsyncArguments addObject:[toPath stringByDeletingLastPathComponent]];
     [self rsyncWithArguments:rsyncArguments];
 }
 
 
-- (void)syncAllLocalToRemote {
+- (void)startupSync {
     for (IMProject *p in self.projects) {
-        [self syncLocalPath:p.absolutePath toRemotePath:[self remotePathWithLocalPath:p.absolutePath]];
+        [self syncLocalPath:p.absoluteLocalPath toRemotePath:[self remotePathWithLocalPath:p.absoluteLocalPath]];
+        [self syncRemotePath:[self remotePathWithLocalPath:p.absoluteLocalPath] toLocalPath:p.absoluteLocalPath];
     }
 }
 
@@ -114,16 +126,21 @@
 }
 
 - (NSString *)remotePathWithLocalPath:(NSString *)localPath {
-    return [[[localPath stringByReplacingOccurrencesOfString:self.root withString:@"127.0.0.1::sync"] stringByDeletingLastPathComponent] stringByAppendingString:@"/"];
+    return [localPath stringByReplacingOccurrencesOfString:self.root withString:@"/sync"];
 }
 
 - (NSString *)localPathWithRemotePath:(NSString *)remotePath {
-    return nil;
+    return [NSString stringWithFormat:@"%@/%@", self.root, [remotePath stringByReplacingOccurrencesOfString:@"/sync" withString:@"" options:NSLiteralSearch range:[remotePath rangeOfString:@"/sync"]]];
 }
+
+- (NSString *)rsyncPathWithRemotePath:(NSString *)remotePath {
+    return [NSString stringWithFormat:@"127.0.0.1::sync%@", [remotePath stringByReplacingOccurrencesOfString:@"/sync" withString:@"" options:NSLiteralSearch range:[remotePath rangeOfString:@"/sync"]]];
+}
+
 
 - (IMProject *)projectContainingPath:(NSString *)path {
     for (IMProject *p in self.projects) {
-        if ([path hasPrefix:p.absolutePath]) {
+        if ([path hasPrefix:p.absoluteLocalPath]) {
             return p;
         }
     }
@@ -166,8 +183,7 @@
         self.inotifyFlushQueue = [NSMutableOrderedSet new];
     }
     for (NSString *path in pathsToSync) {
-        NSString *remoteRsyncPath = [NSString stringWithFormat:@"127.0.0.1::%@", path];
-        [self syncRemotePath:remoteRsyncPath toLocalPath:[self localPathWithRemotePath:remoteRsyncPath]];
+        [self syncRemotePath:[self rsyncPathWithRemotePath:path] toLocalPath:[self localPathWithRemotePath:path]];
     }
 }
 

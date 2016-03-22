@@ -44,7 +44,7 @@
             @"-v",
             @"/sync:/sync",
             CONTAINER_TAG,
-            @"rsyncd.sh"
+            @"inotifystream.sh"
     ];
     NSTask *inotifyTask = [NSTask launchedTaskWithLaunchPath:[[NSBundle mainBundle] pathForResource:@"docker" ofType:nil] arguments:inotifyArgs];
     [inotifyTask waitUntilExit];

@@ -27,10 +27,11 @@
 
 - (void)syncLocalPath:(NSString *)fromPath toRemotePath:(NSString *)toPath;
 - (void)syncRemotePath:(NSString *)fromPath toLocalPath:(NSString *)toPath;
-- (void)syncAllLocalToRemote;
+- (void)startupSync;
 - (NSArray *)findProjects;
 - (NSString *)remotePathWithLocalPath:(NSString *)localPath;
 - (NSString *)localPathWithRemotePath:(NSString *)remotePath;
+- (NSString *)rsyncPathWithRemotePath:(NSString *)remotePath;
 - (IMProject *)projectContainingPath:(NSString *)path;
 - (void)connectToInotifyStream;
 - (void)inotifyFlush;

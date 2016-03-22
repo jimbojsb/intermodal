@@ -50,10 +50,11 @@
     [IMSyncContainerManager runContainer];
 
 
-    [self.syncManager connectToInotifyStream];
 
-    [self.syncManager syncAllLocalToRemote];
-    //[self.syncManager listen];
+
+    [self.syncManager startupSync];
+    [self.syncManager connectToInotifyStream];
+    [self.syncManager listen];
 
 }
 

@@ -12,7 +12,8 @@
 @property NSArray *outboundExclude;
 @property NSArray *inboundInclude;
 @property NSString *projectFilePath;
-@property NSString *absolutePath;
+@property NSString *absoluteLocalPath;
+@property NSString *absoluteRemotePath;
 
 - (id)initWithProjectFilePath:(NSString *)path;
 - (void)loadProjectFileSettings;
