@@ -5,7 +5,7 @@
 
 #import <Foundation/Foundation.h>
 
-#define VM_NAME @"Intermodal-0.4"
+#define VM_NAME @"Intermodal-0.4.1"
 #define VBOXMANAGE @"/usr/local/bin/VBoxManage"
 #define DOCKER_HOST @"tcp://127.0.0.1:2375"
 
