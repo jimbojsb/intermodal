@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		032590C21C9BAB770034D19C /* docker in Resources */ = {isa = PBXBuildFile; fileRef = 032590BF1C9BAB770034D19C /* docker */; };
 		032590C31C9BAB770034D19C /* docker-compose in Resources */ = {isa = PBXBuildFile; fileRef = 032590C01C9BAB770034D19C /* docker-compose */; };
-		032590C41C9BAB770034D19C /* Intermodal-0.4.ova in Resources */ = {isa = PBXBuildFile; fileRef = 032590C11C9BAB770034D19C /* Intermodal-0.4.ova */; };
 		038836E41C854825005C5984 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 038836E31C854825005C5984 /* AppDelegate.m */; };
 		038836E71C854825005C5984 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 038836E61C854825005C5984 /* main.m */; };
 		038836E91C854825005C5984 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 038836E81C854825005C5984 /* Assets.xcassets */; };
 		038836EC1C854825005C5984 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 038836EA1C854825005C5984 /* MainMenu.xib */; };
+		03AD93B51CA0F6750003FE85 /* Intermodal-0.4.1.ova in Resources */ = {isa = PBXBuildFile; fileRef = 03AD93B41CA0F66F0003FE85 /* Intermodal-0.4.1.ova */; };
 		31DE527E8E79CA5870BE7CF7 /* IMEnvironmentSetup.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DE592B58FEF6E468614103 /* IMEnvironmentSetup.m */; };
 		31DE536CCB895D97B97931E3 /* IMProject.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DE54010DC07D1802A5220D /* IMProject.m */; };
 		31DE5681890A4A7F7CA4F8F2 /* IMSyncManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DE5C53C6594C535BB6FAC7 /* IMSyncManager.m */; };
@@ -27,7 +27,6 @@
 /* Begin PBXFileReference section */
 		032590BF1C9BAB770034D19C /* docker */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = docker; sourceTree = "<group>"; };
 		032590C01C9BAB770034D19C /* docker-compose */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = "docker-compose"; sourceTree = "<group>"; };
-		032590C11C9BAB770034D19C /* Intermodal-0.4.ova */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Intermodal-0.4.ova"; sourceTree = "<group>"; };
 		038836DF1C854825005C5984 /* intermodal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = intermodal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		038836E21C854825005C5984 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		038836E31C854825005C5984 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -35,6 +34,7 @@
 		038836E81C854825005C5984 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		038836EB1C854825005C5984 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		038836ED1C854825005C5984 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03AD93B41CA0F66F0003FE85 /* Intermodal-0.4.1.ova */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Intermodal-0.4.1.ova"; sourceTree = "<group>"; };
 		03B1E9411C9C861A00CE65F5 /* intermodal-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "intermodal-Prefix.pch"; sourceTree = "<group>"; };
 		31DE527BCB71A726B9C38C73 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = file.gitignore; path = .gitignore; sourceTree = "<group>"; };
 		31DE52EA536F1B69BEBF4CBF /* IMPopoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMPopoverController.h; sourceTree = "<group>"; };
@@ -127,9 +127,9 @@
 		31DE5C90AE5B7F50BC83EDF7 /* binaries */ = {
 			isa = PBXGroup;
 			children = (
+				03AD93B41CA0F66F0003FE85 /* Intermodal-0.4.1.ova */,
 				032590BF1C9BAB770034D19C /* docker */,
 				032590C01C9BAB770034D19C /* docker-compose */,
-				032590C11C9BAB770034D19C /* Intermodal-0.4.ova */,
 				31DE599FB4E074AF39C32C3A /* getbinaries.sh */,
 				31DE527BCB71A726B9C38C73 /* .gitignore */,
 			);
@@ -160,15 +160,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 038836F01C854825005C5984 /* Build configuration list for PBXNativeTarget "intermodal" */;
 			buildPhases = (
-				107615DA6A5BC3889EFD51BC /* 📦 Check Pods Manifest.lock */,
+				107615DA6A5BC3889EFD51BC /* uD83DuDCE6 Check Pods Manifest.lock */,
 				C1426662898FDF12562DCBF8 /* uD83DuDCE6 Check Pods Manifest.lock */,
 				038836DB1C854825005C5984 /* Sources */,
 				038836DC1C854825005C5984 /* Frameworks */,
 				038836DD1C854825005C5984 /* Resources */,
 				3E7CA9C551BEA2AE8390EA14 /* uD83DuDCE6 Embed Pods Frameworks */,
 				DBF709C0DA66AAA5360CAE0E /* uD83DuDCE6 Copy Pods Resources */,
-				8CAC5A13FF2E5A6BB18B006E /* 📦 Embed Pods Frameworks */,
-				903751070470D8D2FCC941D3 /* 📦 Copy Pods Resources */,
+				8CAC5A13FF2E5A6BB18B006E /* uD83DuDCE6 Embed Pods Frameworks */,
+				903751070470D8D2FCC941D3 /* uD83DuDCE6 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -217,10 +217,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03AD93B51CA0F6750003FE85 /* Intermodal-0.4.1.ova in Resources */,
 				032590C21C9BAB770034D19C /* docker in Resources */,
 				038836E91C854825005C5984 /* Assets.xcassets in Resources */,
 				038836EC1C854825005C5984 /* MainMenu.xib in Resources */,
-				032590C41C9BAB770034D19C /* Intermodal-0.4.ova in Resources */,
 				032590C31C9BAB770034D19C /* docker-compose in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -228,14 +228,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		107615DA6A5BC3889EFD51BC /* 📦 Check Pods Manifest.lock */ = {
+		107615DA6A5BC3889EFD51BC /* uD83DuDCE6 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "\uD83D\uDCE6 Check Pods Manifest.lock";
+			name = "uD83DuDCE6 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,14 +258,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-intermodal/Pods-intermodal-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8CAC5A13FF2E5A6BB18B006E /* 📦 Embed Pods Frameworks */ = {
+		8CAC5A13FF2E5A6BB18B006E /* uD83DuDCE6 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "\uD83D\uDCE6 Embed Pods Frameworks";
+			name = "uD83DuDCE6 Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,14 +273,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-intermodal/Pods-intermodal-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		903751070470D8D2FCC941D3 /* 📦 Copy Pods Resources */ = {
+		903751070470D8D2FCC941D3 /* uD83DuDCE6 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "\uD83D\uDCE6 Copy Pods Resources";
+			name = "uD83DuDCE6 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
