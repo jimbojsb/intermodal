@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "IMEnvironmentSetup.h"
 #import "IMSyncContainerManager.h"
+#import "YAMLSerialization.h"
 
 @interface AppDelegate ()
 
@@ -26,7 +27,7 @@
     [IMEnvironmentSetup setupBashProfile];
 
     NSString *projectRoot = [NSString stringWithFormat:@"%@/%@", NSHomeDirectory(), @"projects"];
-    self.syncManager = [[IMSyncManager alloc] initWithRoot:projectRoot];
+    self.syncManager = [IMSyncManager new];
 
     NSMutableSet *portsToForward = [NSMutableSet new];
     for (IMProject *p in self.syncManager.projects) {

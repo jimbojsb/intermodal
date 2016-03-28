@@ -15,26 +15,14 @@
 @property CDEvents *fsEventsStream;
 @property NSString *root;
 @property NSArray *projects;
-@property NSMutableOrderedSet *inotifyFlushQueue;
-@property GCDAsyncSocket *inotifySocket;
+@property GCDAsyncSocket *fseventSocket;
 @property GCDAsyncSocket *connectedSocket;
-@property dispatch_queue_t inotifyReceiveQueue;
-@property dispatch_queue_t rsyncDispatchQueue;
-@property NSTimer *flushTimer;
 
-- (id)initWithRoot:(NSString *)root;
 - (void)listen;
-
-- (void)syncLocalPath:(NSString *)fromPath toRemotePath:(NSString *)toPath;
-- (void)syncRemotePath:(NSString *)fromPath toLocalPath:(NSString *)toPath;
 - (void)startupSync;
 - (NSArray *)findProjects;
-- (NSString *)remotePathWithLocalPath:(NSString *)localPath;
-- (NSString *)localPathWithRemotePath:(NSString *)remotePath;
-- (NSString *)rsyncPathWithRemotePath:(NSString *)remotePath;
 - (IMProject *)projectContainingPath:(NSString *)path;
 - (void)connectToInotifyStream;
-- (void)inotifyFlush;
-- (void)rsyncWithArguments:(NSArray *)args;
+
 
 @end

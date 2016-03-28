@@ -29,7 +29,6 @@
 		032590BF1C9BAB770034D19C /* docker */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = docker; sourceTree = "<group>"; };
 		032590C01C9BAB770034D19C /* docker-compose */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = "docker-compose"; sourceTree = "<group>"; };
 		0341B4C61CA1C17600D0A90E /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
-		038836DF1C854825005C5984 /* intermodal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = intermodal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		038836E21C854825005C5984 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		038836E31C854825005C5984 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		038836E61C854825005C5984 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -85,7 +84,6 @@
 		038836E01C854825005C5984 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				038836DF1C854825005C5984 /* intermodal.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -163,6 +161,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 038836F01C854825005C5984 /* Build configuration list for PBXNativeTarget "intermodal" */;
 			buildPhases = (
+				7A4114668798A1DFBC0E975B /* 📦 Check Pods Manifest.lock */,
 				107615DA6A5BC3889EFD51BC /* uD83DuDCE6 Check Pods Manifest.lock */,
 				C1426662898FDF12562DCBF8 /* uD83DuDCE6 Check Pods Manifest.lock */,
 				038836DB1C854825005C5984 /* Sources */,
@@ -172,6 +171,8 @@
 				DBF709C0DA66AAA5360CAE0E /* uD83DuDCE6 Copy Pods Resources */,
 				8CAC5A13FF2E5A6BB18B006E /* uD83DuDCE6 Embed Pods Frameworks */,
 				903751070470D8D2FCC941D3 /* uD83DuDCE6 Copy Pods Resources */,
+				954610B4D6E60D9F6ACF94B5 /* 📦 Embed Pods Frameworks */,
+				CCCC7B7BDC88811B66B937D3 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -179,7 +180,6 @@
 			);
 			name = intermodal;
 			productName = intermodal;
-			productReference = 038836DF1C854825005C5984 /* intermodal.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -262,6 +262,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-intermodal/Pods-intermodal-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		7A4114668798A1DFBC0E975B /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		8CAC5A13FF2E5A6BB18B006E /* uD83DuDCE6 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -292,6 +307,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-intermodal/Pods-intermodal-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		954610B4D6E60D9F6ACF94B5 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-intermodal/Pods-intermodal-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C1426662898FDF12562DCBF8 /* uD83DuDCE6 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -305,6 +335,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CCCC7B7BDC88811B66B937D3 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-intermodal/Pods-intermodal-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DBF709C0DA66AAA5360CAE0E /* uD83DuDCE6 Copy Pods Resources */ = {

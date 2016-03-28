@@ -7,18 +7,24 @@ PODS:
     - CocoaAsyncSocket/RunLoop
   - CocoaAsyncSocket/GCD (7.4.3)
   - CocoaAsyncSocket/RunLoop (7.4.3)
+  - LibYAML (0.1.4)
   - Masonry (0.6.4)
+  - YAML-Framework (0.0.2):
+    - LibYAML (~> 0.1.4)
 
 DEPENDENCIES:
   - CDEvents (~> 1.2)
   - CocoaAsyncSocket (~> 7.4)
   - Masonry (~> 0.6)
+  - YAML-Framework
 
 SPEC CHECKSUMS:
   CDEvents: f311f23de13414f4b3625f1a663b2e1d9a85d982
   CocoaAsyncSocket: a18c75dca4b08723628a0bacca6e94803d90be91
+  LibYAML: 3af2c5adf3a40dff936d087aa6a77edc10036bc5
   Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
+  YAML-Framework: 6fe698e19d39d778829f5937e39d1e6bc12afd7b
 
-PODFILE CHECKSUM: 3797e484a42878440f4d59cf5c92a61a9c32a26c
+PODFILE CHECKSUM: f1a92e0b483ddf85029e53648d1c81b61d1ce51e
 
 COCOAPODS: 1.0.0.beta.6
